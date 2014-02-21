@@ -2,10 +2,8 @@ Orroid
 ===========
 
 Orroid is a tool that helps developer to find where the Android Source code is insecure.
-
 Moreover, it offers an anti-decompiling function.
 
-Feb 23, 2014
 
 
 OVERVIEW
