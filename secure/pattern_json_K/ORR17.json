@@ -1,0 +1,6 @@
+{"No":"ORR17",
+"Subject":"루프문 내에서 참조하는 컬렉션을 수정하지 않는다",
+"Level":"Low",
+"Description":"집합 객체를 나열하는 동안 항목을 추가 혹은 제거하거나 멀티스레드 프로그램에서 한 스레드가 집합을 나열하는 동안 다른 스레드가 수정할 경우 예측할 수 없는 작동을 한다.",
+"Vulncode":"class [class] {\n\tpublic static void main (String[] args) {\n\t\tList <String> [list] = new ArrayList<String>();\n\t\t[list].add(\"[string1]\");\n\t\t[list].add(\"[string2]\");\n\n\t\tIterator [iter] = [list].iterator();\n\t\twhile( [iter].hashNext()) {\n\t\t\tString [s] = (String)[iter].next();\n\t\t\tif( [s].equals(\"[string1]\")) {\n\t\t\t\t[list].remove([s]);\n\t\t\t}\n\t\t}\n\t}\n}",
+"Secucode":"\n...\nif([s].equals(\"[string]\")) {\n\t[iter].remove();\n}\n..."}

@@ -1,0 +1,6 @@
+{"No":"ORR52",
+"Subject":"SYSTEM_ALERT_WINDOW",
+"Level":"Low",
+"Description":"This permission is used when making a top view. Even if other apps are running, windows of the app having this permission are shown top. So users can feel inconvenience.",
+"Vulncode":"",
+"Secucode":""}

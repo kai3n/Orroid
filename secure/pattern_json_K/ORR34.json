@@ -1,0 +1,6 @@
+{"No":"ORR34",
+"Subject":"취약한 암호화 알고리즘의 사용",
+"Level":"Medium",
+"Description":"보안적으로 취약하거나 표준화되지 않은 암호화 알고리즘을 사용하면 쉽게 뚫려 암호화의 의미가 없어진다.\n 그러므로 AES처럼 보다 강력한 암호화 알고리즘을 사용해야 한다.",
+"Vulncode":"public byte[] encrypt(byte[] [msg], Key [key]) {\n\tbyte[] [var1] = null;\n\n\ttry{\n\t\tCipher [var2] = Cipher.getInstance(\"DES\");\n\t\t[var2].init(Cipher.ENCRYPT_MODE, [key]);\n\t\t[var1] = [var2].update([msg]);\n\t} catch (InvalidKeyException [exception]) {\n\t\t...\n\t}\n\treturn [var1];\n\t}",
+"Secucode":"public byte[] encrypt(byte[] [msg], Key [key]) {\n\tbyte[] [var1] = null;\n\n\ttry{\n\t\tCipher [var2] = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\n\t\t[var2].init(Cipher.ENCRYPT_MODE, [key]);\n\t\t[var1] = [var2].update([msg]);\n\t} catch (InvalidKeyException [exception]) {\n\t\t...\n\t}\n\treturn [var1];\n\t}"}

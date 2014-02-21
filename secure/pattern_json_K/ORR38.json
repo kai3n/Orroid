@@ -1,0 +1,6 @@
+{"No":"ORR38",
+"Subject":"Share User ID에 의한 접근",
+"Level":"Low",
+"Description":"Anroid Manifest.xml파일의 manifest 태그에서 android:sharedUserId속성을 설정할 경우 \n동일한 아이디와 서명을 사용한 다른 응용프로그램이 해당 프로그램의 정보에 접근할 수 있다.",
+"Vulncode":"...\n	<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n package = \"com.example.android.apis\"\n	\tandroid:versionCode=\"1\"\n   \tandroid:versionName=\"10\"\n\t\tandroid:sharedUserId=\"android.uid.developer1\">",
+"Secucode":"...\n	<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n package = \"com.example.android.apis\"\n	\tandroid:versionCode=\"1\"\n   \tandroid:versionName=\"10\"\n>"}

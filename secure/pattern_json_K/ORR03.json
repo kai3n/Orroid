@@ -1,0 +1,6 @@
+{"No":"ORR03",
+"Subject":"finally문을 갑작스럽게 빠져나와서는 안 된다",
+"Level":"Low",
+"Description":"finally 블럭 안에 return, break, continue, throw같은 구문을 사용하지 말아야 한다.\n finally 블럭을 갑작스럽게 빠져나가면 try나 catch에서 발생한 예외를 처리하지 못할 수도 있다.",
+"Vulncode":"class [class] {\n\t[method] {\n\t\ttry{\t\t\t...\n} finally{\n\t\t\t...\n\t\t\treturn ..;\n\t\t}\n\t}\n}",
+"Secucode":"try{\n\t...\n} finally{\n\t...\n}\nreturn ..;\t\t//return문을 finally문 외부에 적어준다."}

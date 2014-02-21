@@ -1,0 +1,6 @@
+{"No":"ORR32",
+"Subject":"Object Model Violation: Just one of equals() and hashCode() Defined",
+"Level":"Low",
+"Description":"According to Java standard, the same object should have same hashcode value.\n So,if a.equals(b) == true, a.hashCode() == b.hashCode() should be true.\n So you should either define all of them or none of them.",
+"Vulncode":"public boolean equals(Object [param]){\n\tif([param] == null)\n\t\treturn false;\n\n\tint var1 = this.hashCode();\n\tint var2 = [param].hashCode();\n\n\tif (var1 == var2)\n\t\treturn true;\n\telse\n\t\treturn false;\n}",
+"Secucode":"public boolean equals(Object [param]){\n\tif([param] == null)\n\t\treturn false;\n\n\tint var1 = this.hashCode();\n\tint var2 = [param].hashCode();\n\n\tif (var1 == var2)\n\t\treturn true;\n\telse\n\t\treturn false;\n}\n\npublic int hashCode(){\n\treturn new HashCodeBuilder(17, 37)toHashCode();\n}"}

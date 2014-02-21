@@ -1,0 +1,6 @@
+{"No":"ORR20",
+"Subject":"주어진 객체의 class형을 비교할 때 결코 클래스명으로 비교해서는 안 된다",
+"Level":"High",
+"Description":"클래스 명으로 객체를 비교하게 되면 Mix-and-Match공격에 취약해진다. Attacker는 원하는 정규명을 가진 악의적인 클래스를 만들어 리소스에 접근할 수 있다.",
+"Vulncode":"1)\nif( [class 객체].getClass().getName().equals(\"[class]\") ){\n\t...\n}\n2)\nif([class_obj1].getClass().getName().equals([class_obj2].getClass().getName()){\n\t...\n}",
+"Secucode":"1)\nif([class 객체].getClass() == this.getClass().getClassLoader().loadClass(\"[class]\")){\n\t...\n}\n2)\nif([class_obj1].getClass() == [class_obj2].getClass()){\n\t...\n}"}

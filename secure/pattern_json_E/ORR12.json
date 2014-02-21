@@ -1,0 +1,6 @@
+{"No":"ORR12",
+"Subject":"Validate method arguments",
+"Level":"High",
+"Description":"Failure to validate method arguments can result in incorrect calculations, runtime exceptions, violation of class invariants, and inconsistent object state.",
+"Vulncode":"private [data_type] [var] = null;\n\n[method1]([data_type] [param]){\n\t[var] = [param];\n}\n[method2](){\n\t//[var] Perform some action here\n}",
+"Secucode":"[method1]([data_type] [param]){\n\tif([param] == null){\t\t//처리\n\t}\n\tif(isInvalidState([param])) {\t\t//Handle invalid state\n\t}\n\n\t[var] = [param];\n}\n\n[method2]{\n\tif([var] == null) {\t\t//Handle no state (e.g. null) condition\t}\n}\n\n* Exceptions\n\n Argument validation inside a method may be omitted when the stated contract of a method requires that the caller must validate arguments passed to the method. \n Complete validation of all arguments of all methods may introduce added cost and complexity.\nIn such cases, consider argument validation at API boundaries."}

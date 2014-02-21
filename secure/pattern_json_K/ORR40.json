@@ -1,0 +1,6 @@
+{"No":"ORR40",
+"Subject":"오류상황에 대한 처리 부재",
+"Level":"Medium",
+"Description":"오류를 포착하고도 해당 오류에 대해서 아무런 조치도 취하지 않으면 의도치 않은 결과가 초래된다.",
+"Vulncode":"public [method](String [param1], String [param2], String [param3]) {\n\ttry{\n\t\t...\n\t} catch (SQLException [exception]) {\n\t} catch (NamingException [exception]) {\n\t}\n\t...\n}",
+"Secucode":"public [method](String [param1], String [param2], String [param3]) {\n\ttry{\n\t\t...\n\t} catch (SQLException [exception]) {\n\tif([var] != null){\n ...\n\t}\n} catch (NamingException [exception]) {\n\tif([var] != null){\n ...\n\t}\n}\n\t...\n}"}

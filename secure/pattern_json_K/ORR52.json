@@ -1,0 +1,6 @@
+{"No":"ORR52",
+"Subject":"SYSTEM_ALERT_WINDOW",
+"Level":"Low",
+"Description":"최상위 view를 만들 때 사용하는 permission이다. 다른 App이 켜져 있어도 최상위에 보이기 때문에 사용자 입장에서는 불편함을 느낄 수 있다.",
+"Vulncode":"",
+"Secucode":""}

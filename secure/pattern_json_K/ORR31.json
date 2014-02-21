@@ -1,0 +1,6 @@
+{"No":"ORR31",
+"Subject":"null매개변수 미검사(Missing check for Null Parameter)",
+"Level":"Medium",
+"Description":"Object.equals(), Comparable.compareTo() 및 Comparator.compare() 메소드는 구현 시 Java표준에 따라\n 매개변수가 null인 경우 지정된 값을 반환해야 한다. 그렇지 않을 경우 예기치 못한 동작을 일으킬 수 있다.",
+"Vulncode":"public void onCreate(Bundle savedInstanceState){\n\tsuper.onCreate(savedInstanceState);\n}\n\npublic boolean equals(Object [param]){\n	return (toString().equals([param].toString()));\n}",
+"Secucode":"public boolean equals(Object [param]){\n\tif ([param] != null){\n  \treturn (toString().equals([param].toString()));\n	else\n	\treturn false;\n}\n}"}

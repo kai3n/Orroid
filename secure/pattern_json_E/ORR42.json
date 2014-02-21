@@ -1,0 +1,6 @@
+{"No":"ORR42",
+"Subject":"SEND_SMS, RECEIVE_SMS",
+"Level":"High",
+"Description":"SEND_SMS, RECEIVE_SMS are permission that allows to send and receive SMS and MMS. In case of malicious apps,  continuously send SMS or MMS to give user a money bomb.",
+"Vulncode":"<uses-permission\n\tandroid:name=\"android.permission.SEND_SMS\"\n\t...\n/>",
+"Secucode":"public class MyActivity extends Activity {\n\t...\n\tpublic void onClick(View v){\n\t\tUri [var1] = Uri.parse(\"sms:[number]\");\n\t\tIntent [intent] = new Intent(Intent.ACTION_VIEW);\n\t\t[intent].setData([var1]);\n\t\t[intent].putExtra(Intent.EXTRA_TEXT, \"Hello\");\n\t\tsuper.startActivity([intent]);\n\t}\n"}

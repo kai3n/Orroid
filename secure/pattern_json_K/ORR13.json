@@ -1,0 +1,6 @@
+{"No":"ORR13",
+"Subject":"폐지되었거나 폐지될 예정인 class나 method사용하지 않기",
+"Level":"High",
+"Description":"프로그램 코드에서 폐지 예정이거나 폐지된 클래스 혹은 메서드를 사용하게 되면 오작동을 일으킬 수 있다.",
+"Vulncode":"1)폐지된 method와 class 그리고 그에 대한 새 class와 method\n\njava.lang.Character.isJavaLetter()\njava.lang.Character.isJavaLetterOrDigit()\njava.lang.Character.isSpace()\njava.lang.Class.newInstance()\njava.util.Date.*\njava.util.Dictionary\njava.util.Properties.save()\njava.lang.Thread.run()\njava.lang.Thread.stop()\njava.lang.ThreadGroup.*\n\n2) java.text.Format 추상 클래스",
+"Secucode":"1)\n\njava.lang.Character.isJavaIdentifierStart()\njava.lang.Character.isJavaIdentifierPart()\njava.lang.Character.isWhitespace()\njava.lang.reflect.Constructor.newInstance()\njava.util.Calender\njava.util.Map<K, V>\njava.util.Properties.store()\njava.lang.Thread.start()\njava.lang.Thread.interrupt()\njava.util.concurrent.Executor\n\n2) 해당 class를 상속한 하위 class들은 결코 Multi Thread하면 안 된다."}

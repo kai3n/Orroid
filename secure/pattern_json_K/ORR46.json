@@ -1,0 +1,6 @@
+{"No":"ORR46",
+"Subject":"READ_CALENDAR, WRITE_CALENDAR",
+"Level":"Low",
+"Description":"Calendar을 읽고 쓰는 것은 ‘업무 관리 App’에서 주로 필요로 하는 permission이다. 다른 App에서 이를 악용할 경우, 메모해둔 내용이 사라지거나 중요 일정이 읽히는 등 신경 거슬리는 일들이 일어날 수 있으니 주의해야 한다.",
+"Vulncode":"",
+"Secucode":""}

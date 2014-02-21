@@ -1,0 +1,7 @@
+{"No":"ORR45",
+"Subject":"Com.android.browser.permission.READ_HISTORY_BOOKMARKS\n\t\t\t\t\t.WRITE_HISTORY_BOOKMARKS",
+"Level":"High",
+"Description":"사용자가 남긴 흔적, Web Browsing history나 bookmark들을 읽어 들여오거나 쓰게 해준다. \n기밀 정보는 아니더라도 이러한 정보들은 개인의 취미나 패턴파악에 사용될 수 있기 때문에 특수한 App이 아닌 이상 설치하지 않도록 한다",
+"Vulncode":"",
+"Secucode":""}
+

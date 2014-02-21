@@ -1,0 +1,6 @@
+{"No":"ORR37",
+"Subject":"Exported Access to Components",
+"Level":"Low",
+"Description":"When the value of \"android:exported\" is set true in a manifest.xml file in android application, it can result in unintended behavior.\n So you should not provide access permission from external.",
+"Vulncode":"...\n<application android:icon=\"@drawable/icon\" android:label = \"@string/label\">\n\t<service android:name=\".syncadapter.SyncService\" android:exported = \"true\">\n\t<intent-filter>\n\t\t...",
+"Secucode":"...\n<application android:icon=\"@drawable/icon\" android:label = \"@string/label\">\n\t<service android:name=\".syncadapter.SyncService\" android:exported = \"false\">\n\t<intent-filter>\n  \t\t..."}

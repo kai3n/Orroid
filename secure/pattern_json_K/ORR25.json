@@ -1,0 +1,6 @@
+{"No":"ORR25",
+"Subject":"Thread.run()메서드를 호출하지 않는다.",
+"Level":"Low",
+"Description":"Thread.start() 메서드는 자바 런타임이 새로 시작된 스레드를 사용해 스레드의 run()메서드를 실행한다. \nrun()메서드를 직접 호출하면 새로 만들어진 스레드가 아니라 현재 스레드에 의해 run()메서드가 실행된다. 이로 인해 예상치 못한 결과가 나타나기도 한다.",
+"VulnCode":"public final class Foo implements Runnable {\n\t@Override public void run() {\n\t\t//...\n\t}\n\tpublic static void main(Stirng[] args) {\n\t\tFoo foo = new Foo();\n\t\tnew Thread(foo).run();\n\t}\n}",
+"SecuCode":"public final class Foo implements Runnable {\n\t@Override public void run() {\n\t\t//...\n\t}\n\tpublic static void main(Stirng[] args) {\n\t\tFoo foo = new Foo();\n\t\tnew Thread(foo).start();\n\t}\n}"}

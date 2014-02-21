@@ -1,0 +1,6 @@
+{"No":"ORR02",
+"Subject":"예외에 의해 기밀 정보가 유출되지 않게 한다",
+"Level":"Medium",
+"Description":"예외를 전달할 때 기밀 정보를 걸러내지 않으면 해당 정보가 Attacker에게 실마리를 제공할 수 있다.\n되도록이면 아래에 나와있는 함수들을 사용하지 않도록 한다.",
+"Vulncode":"java.io.FileNotFoundException                  : 기반 파일 시스템 정보 나열\njava.sql.SQLException                          : 데이터베이스 정보 나열\njava.net.BindException                         : 열린 포트 나열\njava.util.ConcurrentModificationException      : 코드 정보 제공\njavax.naming.InsufficientResourcesException    : 서버 리소스 부족\njava.util.MissingResourcesException            : 리소스 나열\njava.util.jar.JarException                     : 기반 파일 시스템의 구조\njava.security.acl.NotOwnerException            : 소유자 나열\njava.lang.OutOfMemoryError                     : 서비스 거부\njava.lang.StackOverflowError                   : 서비스 거부",
+"Secucode":"해당 package들을 사용하지 않는다."}

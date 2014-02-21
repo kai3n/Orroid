@@ -1,0 +1,6 @@
+{"No":"ORR04",
+"Subject":"RuntimeException, Exception, Throwable 예외를 발생시키지 않는다",
+"Level":"Low",
+"Description":"RuntimeException, Exception, Throwable 예외로는 호출코드에서 발생한 예외의 원인을 구체적으로 알지 못한다.",
+"Vulncode":"1)\nboolean [method] ([param]){\n\tif([param] == null){\n\t\tthrow new RuntimeException(\"null\");\n\t}\n\n\tif([param].equals(\" \")){\n\t\treturn true;\n\t}\n\t...\n}\n2)\nprivate void [method]() throws Exception {\n\t...\n}",
+"Secucode":"1)\nboolean [method] ([param]){\n\tif([param] == null){\n\t\tthrow new NullPointerException();\n\t}\n\n\t...\n}\n2)\nprivate void [method]() throws IOException {\n\t...\n}"}

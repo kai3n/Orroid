@@ -1,0 +1,6 @@
+{"No":"ORR02",
+"Subject":"Do not allow exceptions to expose sensitive information",
+"Level":"Medium",
+"Description":"Failure to filter sensitive information when propagating exceptions often results in information leaks that can assist an attacker's efforts develop further exploits.\nThe following table lists several problematic exceptions.",
+"Vulncode":"java.io.FileNotFoundException                  : Underlying file system structure, user name enumeration\njava.sql.SQLException                          : Database structure, user name enumeration\njava.net.BindException                         : Enumeration of open ports when untrusted client can choose server port\njava.util.ConcurrentModificationException      : May provide information about thread-unsafe code\njavax.naming.InsufficientResourcesException    : Insufficient server resources (may aid DoS)\njava.util.MissingResourcesException            : Resource enumeration\njava.util.jar.JarException                     : Underlying file system structure\njava.security.acl.NotOwnerException            : Owner enumeration\njava.lang.OutOfMemoryError                     : DoS\njava.lang.StackOverflowError                   : DoS",
+"Secucode":"Do not use followed packages"}

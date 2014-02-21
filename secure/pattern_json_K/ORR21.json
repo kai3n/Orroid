@@ -1,0 +1,6 @@
+{"No":"ORR21",
+"Subject":"public static field는 final로 선언해 주도록 한다",
+"Level":"Medium",
+"Description":"클래스의 public static 필드에는 어느 누구나 쉽게 접근할 수 있다. 이 필드에 접근하는 것을 보안 관리자가 검사하거나 새로운 값이 쓰여진 것을 프로그램이 검증할 수도 없다.\n 그래서 public static 필드는 반드시 final로 선언해 신뢰하지 않는 코드가 조작하는 일이 없도록 해야 한다.",
+"Vulncode":"1)\npublic class [class]{\n\tpublic static field [function table class] [var];\n}\n2)\nclass [class] implements Serializable {\n\tpublic static [var] = [value];\n\t...\n}",
+"Secucode":"1)\npublic static final [function table class] [var];\n\n2)\nprivate static final [var] = [value];"}

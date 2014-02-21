@@ -1,0 +1,6 @@
+{"No":"ORR14",
+"Subject":"보안 검사하는 method는 private나 final로 반드시 선언해야 한다.",
+"Level":"Medium",
+"Description":"private이나 final로 선언하지 않으면 악의적인 목적을 가지고 있는 하위 클래스가 해당 메서드가 수행하는 보안 검사를 우회할 수 있다.",
+"Vulncode":"public [method] {\n\ttry{\n\t\tSecurityManger [var] = System.getSecurityManager();\n\t\tif([var] != null)\n\t\t\t[var].checkRead(\"[파일]\");\n\t\t// 파일 읽기 권한 확인\n\t} catch (SecurityException [var2]){\n\t\t//예외 처리\t}\n}",
+"Secucode":"1)\npublic final [method] {…}\n2)\nprivate [method] {…}"}

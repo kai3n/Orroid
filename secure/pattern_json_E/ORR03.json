@@ -1,0 +1,6 @@
+{"No":"ORR03",
+"Subject":"Do not complete abruptly from a finally block",
+"Level":"Low",
+"Description":"Never use return, break, continue, or throw statements within a finally block.\n Statements that cause the finally block to complete abruptly also cause the try block to complete abruptly and consequently suppress any exception thrown from the try or catch blocks.",
+"Vulncode":"class [class] {\n\t[method] {\n\t\ttry{\t\t\t...\n} finally{\n\t\t\t...\n\t\t\treturn ..;\n\t\t}\n\t}\n}",
+"Secucode":"try{\n\t...\n} finally{\n\t...\n}\nreturn ..;\t\t//Any return statements must go outside the finally block."}

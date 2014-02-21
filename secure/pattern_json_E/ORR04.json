@@ -1,0 +1,6 @@
+{"No":"ORR04",
+"Subject":"Do not throw RuntimeException, Exception, or Throwable",
+"Level":"Low",
+"Description":"With RuntimeException, Exception and Throwable, a caller cannot examine the exceptions to determine why they were thrown and consequently cannot attempt recovery.",
+"Vulncode":"1)\nboolean [method] ([param]){\n\tif([param] == null){\n\t\tthrow new RuntimeException(\"null\");\n\t}\n\n\tif([param].equals(\" \")){\n\t\treturn true;\n\t}\n\t...\n}\n2)\nprivate void [method]() throws Exception {\n\t...\n}",
+"Secucode":"1)\nboolean [method] ([param]){\n\tif([param] == null){\n\t\tthrow new NullPointerException();\n\t}\n\n\t...\n}\n2)\nprivate void [method]() throws IOException {\n\t...\n}"}

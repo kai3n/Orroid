@@ -1,0 +1,6 @@
+{"No":"ORR08", 
+"Subject":"문자열을 검증하기 전에 정규화한다", 
+"Level":"High", 
+"Description":"많은 Application들이 XSS와 같은 악의적 행위를 피하고자 사용자 입력 문자열을 검증하고 걸러낸다.\n 이 과정에서 입력을 정규화 한 후 검증해야 유니코드와 같은 특정값도 탐지할 수 있다.",
+"Vulncode":"String s = \"\uFE64\"+\"script\"+\"\uFE65\";\nPattern pattern = Pattern.compiler(\"[<>]\");\nMatcher matcher = pattern.matcher(s);\nif(matcher.find()) { \n\tthrow new IllegalStateException();\n} else {\n\t...}\n\ns = Normalizer.normalize(s, Form.NFKC);",
+"Secucode":"String s = \"\uFE64\"+\"script\"+\"\uFE65\";\ns = Normalizer.normalize(s, Form.NFKC);\n\nPattern pattern = Pattern.compiler(\"[<>]\");\nMatcher matcher = pattern.matcher(s);\nif(matcher.find()) {\n\tthrow new IllegalStateException();\n} else {\n\t...\n}"}

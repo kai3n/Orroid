@@ -1,0 +1,6 @@
+{"No":"ORR30",
+"Subject":"Relative Path Traversal",
+"Level":"High",
+"Description":"You should use methods such as replaceAll() when pathname is constructed by external input.\n Otherwise, it can result in system information leak, service disdorder, etc.",
+"Vulncode":"public void [method](Properties [param]) {\n    ...\n\tString [var1] = request.getProperty(\"[filename]\");\n\tif([var1] != null){\n\t\tFile [file] = new File(\"[absolute path]\" + [var1]);\n\t\t[file].delete();\n\t}\n\t...\n}",
+"Secucode":"public void [method](Properties [param]) {\n    ...\n\tString [var1] = request.getProperty(\"[filename]\");\n\tString [var2] = \"[absolute path]\";\n\tif([var1] != null && !\"\".equals([var1])){\n\t\t[var1] = [var1].replaceAll(\"/\", \" \");\n\t\t[var1] = [var1].replaceAll(\"\\\", \" \");\n\t\t[var1] = [var1].replaceAll(\".\", \" \");\n\t\t[var1] = [var1].replaceAll(\"&\", \" \");\n\t\t[var1] = [var1] + \"-report\";\n\t\tFile [file] = new File([var2] + [var1]);\n\t\t[file].delete();\n\t}\n\t...\n}"}

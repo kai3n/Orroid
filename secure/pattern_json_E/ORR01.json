@@ -1,0 +1,6 @@
+{"No":"ORR01",
+"Subject":"Do not suppress or ignore checked exceptions",
+"Level":"Low",
+"Description":"Exceptions must be handled appropriately. Each catch block must ensure that the program continues only with valid invariants. \nIf not handled appropriately, unintended results can be derived.",
+"Vulncode":"1)\ntry{\n\t...\n}catch (IOException [var]){\n\t[var].printStacktrace();\n}\n2)\nclass [class name] implements Runnable{\n\tpublic void run(){\n\t\ttry{\n\t\t\t...\n\t\t}catch (InterruptedException [var]){\n\t\t}\n\t}\n}",
+"Secucode":"1)\nboolean volatile [var] = false;\ndo {\n\ttry{\n\t\t//If requested things do not exist, throws Exception.\n\t\t[var] = true;\n\t} catch ([Exception]){\n\t\t//Ask the user for a different input.\n\t}\n} while ([var] != true);\n2)\ncatch (InterruptedException [var]){\n\tThread.currentThread().interrupt();\n}"}

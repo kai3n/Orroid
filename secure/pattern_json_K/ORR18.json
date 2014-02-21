@@ -1,0 +1,6 @@
+{"No":"ORR18",
+"Subject":"NaN과 값을 비교하지 않는다",
+"Level":"Low",
+"Description":"NaN(Not-a-number)은 크기가 없기 때문에 비교 연산 중 피연산자가 NaN이라면 반환값이 false이다.\n그래서 입력으로 NaN이 들어오는 것을 확인하지 안으면 예상치 못한 결과가 발생할 수 있다.",
+"Vulncode":"public class NaNComparison {\n\tpublic static void main(String[] args) {\n\t\tdouble x = 0.0;\n\t\tdouble result = Math.cos(1/x);\n\t\tif ( result == Double.NaN) {\n\t\t\tSystem.out.println(결과는 NaN이다.);\n\t\t}\n\t}\n}",
+"Secucode":"public class NaNComparison {\n\tpublic static void main(String[] args) {\n\t\tdouble x = 0.0;\n\t\tdouble result = Math.cos(1/x);\n\t\tif (Double.isNaN(reuslt)) {\n\t\t\tSystem.out.println(결과는 NaN이다.);\n\t\t}\n\t}\n}"}

@@ -1,0 +1,6 @@
+{"No":"ORR28",
+"Subject":"스레드 안전한 메서드를 스레드 안전하지 않은 메서드로 오버라이드하지 않는다.",
+"Level":"Low",
+"Description":"스레드가 사용하기에 안전하지 않은 메서드로 오버라이드 해버리면 상속하는 하위 클래스가 사용할 때 적절하게 동기화 되지 않게 된다.",
+"VulnCode":"class Base {\n\tpublic synchronized void doSomething() {\n\t\t...\n\t}\n}\nclass Derived extends Base {\n\t@Override public void doSomething() {\n\t\t...\n\t}\n}\nclass Base {\n\tprivate final Object lock = new Object();\n\tpublic void doSomething() {\n\t\tsynchronized(lock) {\n\t\t\t...\n\t\t}\n\t}\n}\nclass Derived extends Base {\n\t@Override public void doSomething() {\n\t\ttry {\n\t\t\tsuper.doSomething();\n\t\t} finally {\n\t\t\tlogger.log(Level.FINE, \"작업 처리\");\n\t\t}\n\t}\n}",
+"SecuCode":"class Base {\n\tpublic synchronized void doSomething() {\n\t\t...\n\t}\n}\nclass Derived extends Base {\n\t@Override public synchronized void doSomething() {\n\t\t...\n\t}\n}\nclass Base {\n\tpublic synchronized void doSomething() {\n\t\t... \n\t}\n}\nclass Derived extends Base {\n\tprivate final Object lock = new Object();\n\t@Override public void doSomething() {\n\t\tsynchronized (lock) {\n\t\t\t... \n\t\t}\n\t}\n}"}

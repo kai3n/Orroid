@@ -1,0 +1,6 @@
+{"No":"ORR16",
+"Subject":"Do not use finalizers",
+"Level":"Medium",
+"Description":"Improper use of finalizers can result in resurrection of garbage-collection-ready objects and result in denial-of-service vulnerabilities.",
+"Vulncode":"class [class 명] extends Jframe{\n\tprivate byte[] buffer = new byte[16*1024*1024];\n\t...\n}",
+"Secucode":"class [class 명]{\n\tprivate Jframe [var];\n\tprivate byte[] buffer = new byte[16*1024*1024];\n\t...\n}"}

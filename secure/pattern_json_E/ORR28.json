@@ -1,0 +1,6 @@
+{"No":"ORR28",
+"Subject":"Do not override thread-safe methods with methods that are not thread-safe",
+"Level":"Low",
+"Description":"Overriding thread-safe methods with methods that are unsafe for concurrent use can result in improper synchronization when a client that depends on the thread-safety promised by the parent inadvertently operates on an instance of the subclass.",
+"VulnCode":"class Base {\n\tpublic synchronized void doSomething() {\n\t\t...\n\t}\n}\nclass Derived extends Base {\n\t@Override public void doSomething() {\n\t\t...\n\t}\n}\nclass Base {\n\tprivate final Object lock = new Object();\n\tpublic void doSomething() {\n\t\tsynchronized(lock) {\n\t\t\t...\n\t\t}\n\t}\n}\nclass Derived extends Base {\n\t@Override public void doSomething() {\n\t\ttry {\n\t\t\tsuper.doSomething();\n\t\t} finally {\n\t\t\tlogger.log(Level.FINE, \"Did something\");\n\t\t}\n\t}\n}",
+"SecuCode":"class Base {\n\tpublic synchronized void doSomething() {\n\t\t...\n\t}\n}\nclass Derived extends Base {\n\t@Override public synchronized void doSomething() {\n\t\t...\n\t}\n}\nclass Base {\n\tpublic synchronized void doSomething() {\n\t\t... \n\t}\n}\nclass Derived extends Base {\n\tprivate final Object lock = new Object();\n\t@Override public void doSomething() {\n\t\tsynchronized (lock) {\n\t\t\t... \n\t\t}\n\t}\n}"}

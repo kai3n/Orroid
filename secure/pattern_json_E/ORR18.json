@@ -1,0 +1,6 @@
+{"No":"ORR18",
+"Subject":"Do not attempt comparisons with NaN",
+"Level":"Low",
+"Description":"NaN (not-a-number) is unordered, so the numerical comparison operators <, <=, >, and >= return false if either or both operands are NaN.\nSo omitting checks for NaN can leads to unexpected results.",
+"Vulncode":"public class NaNComparison {\n\tpublic static void main(String[] args) {\n\t\tdouble x = 0.0;\n\t\tdouble result = Math.cos(1/x);\n\t\tif ( result == Double.NaN) {\n\t\t\tSystem.out.println("result is NaN");\n\t\t}\n\t}\n}",
+"Secucode":"public class NaNComparison {\n\tpublic static void main(String[] args) {\n\t\tdouble x = 0.0;\n\t\tdouble result = Math.cos(1/x);\n\t\tif (Double.isNaN(reuslt)) {\n\t\t\tSystem.out.println("result is NaN");\n\t\t}\n\t}\n}"}

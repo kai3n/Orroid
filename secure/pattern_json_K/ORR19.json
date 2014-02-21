@@ -1,0 +1,6 @@
+{"No":"ORR19",
+"Subject":"데이터 멤버는 private로 선언하고 접근 method를 따로 제공한다.",
+"Level":"Medium",
+"Description":"데이터 멤버를 private로 선언하지 않으면 객체 지향 프로그래밍의 캡슐화가 사라진다. 결과적으로 외부에서 해당 데이터를 제어할 수 있게 된다.",
+"Vulncode":"public class [class]{\n\tpublic [var];\n\t[method 1] ([param1]){\n\t\t[var] =  ...;\n\t}\n\t...\n}",
+"Secucode":"public class [class]{\n\tprivate [var];\n\t[method 1] (){\n\t\treturn [var];\n\t\t...\n}\n}"}

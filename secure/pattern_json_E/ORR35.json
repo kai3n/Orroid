@@ -1,0 +1,6 @@
+{"No":"ORR35",
+"Subject":"Use of Insufficiently Random Values",
+"Level":"Medium",
+"Description":"When software generates predictable values in a context requiring unpredictability, it may be possible for an attacker to guess the next value that will be generated, and use this guess to impersonate another user or access sensitive information. \n Using such as a seed for generating a cryptographic key is one of the good ways to make prediction harder.",
+"Vulncode":"public double [method]{\n\treturn Math.random();\n}",
+"Secucode":"import java.util.Random;\nimport java.util.Date;\n\n...\n\npublic int [method]() {\n\tRandom [var1] = new Random();\n\t[var1].setSeed(new Date().getTime());\n\treturn ([var1].nextInt()%6) +1;\n}"}

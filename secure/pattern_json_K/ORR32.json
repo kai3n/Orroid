@@ -1,0 +1,6 @@
+{"No":"ORR32",
+"Subject":"equals()나 hashCode() 둘 중의 하나 정의",
+"Level":"Low",
+"Description":"Java 표준에 따르면 같은 객체는 같은 해시코드 값을 가져야 한다.\n 즉, a.equals(b) == true이면 a.hashCode() == b.hashCode()여야 한다는 것이다.\n 그러므로 둘 다를 구현하거나 둘 중 어느것도 구현하지 않아야 한다. ",
+"Vulncode":"public boolean equals(Object [param]){\n\tif([param] == null)\n\t\treturn false;\n\n\tint var1 = this.hashCode();\n\tint var2 = [param].hashCode();\n\n\tif (var1 == var2)\n\t\treturn true;\n\telse\n\t\treturn false;\n}",
+"Secucode":"public boolean equals(Object [param]){\n\tif([param] == null)\n\t\treturn false;\n\n\tint var1 = this.hashCode();\n\tint var2 = [param].hashCode();\n\n\tif (var1 == var2)\n\t\treturn true;\n\telse\n\t\treturn false;\n}\n\npublic int hashCode(){\n\treturn new HashCodeBuilder(17, 37)toHashCode();\n}"}

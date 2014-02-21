@@ -1,0 +1,4 @@
+{"No":"ORR41", "Subject":"시스템 데이터 정보 누출", "Level":"Low",
+"Description":"시스템 내부 데이터나 디버깅 관련 정보가 외부에 공개되면 이로 인해 Attacker에게 공격의 빌미를 주게 된다.",
+"Vulncode":"public void [method1](){\n\ttry{\n\t\t[method2]();\n\t} catch (IOException [exception]){\n\t\tSystem.err.printf([excpetion].getMessage());\n\t}\n}\nprivate void [method2] throws IOException{ ... }",
+"Secucode":"public void [method1](){\n\ttry{\n\t\t[method2]();\n\t} catch (IOException [exception]){\n\t\tSystem.err.println(\"IOException Occured\");\n\t}\n}\nprivate void [method2] throws IOException{ ... }"}

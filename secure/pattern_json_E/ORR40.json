@@ -1,0 +1,6 @@
+{"No":"ORR40",
+"Subject":"Detection of Error Condition Without Action",
+"Level":"Medium",
+"Description":"The software detects a specific error, but takes no actions to handle the error. It can lead to unintended behavior.",
+"Vulncode":"public [method](String [param1], String [param2], String [param3]) {\n\ttry{\n\t\t...\n\t} catch (SQLException [exception]) {\n\t} catch (NamingException [exception]) {\n\t}\n\t...\n}",
+"Secucode":"public [method](String [param1], String [param2], String [param3]) {\n\ttry{\n\t\t...\n\t} catch (SQLException [exception]) {\n\tif([var] != null){\n ...\n\t}\n} catch (NamingException [exception]) {\n\tif([var] != null){\n ...\n\t}\n}\n\t...\n}"}

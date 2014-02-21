@@ -1,0 +1,6 @@
+{"No":"ORR16",
+"Subject":"되도록이면 finalize() 메서드를 사용하지 않는다.",
+"Level":"Medium",
+"Description":"Finalizer를 잘못 사용하게 되면, 가비지 컬렉션 할 수 있는 객체를 살려서 서비스 거부 공격 취약점을 발생시킬 수 있다.",
+"Vulncode":"class [class 명] extends Jframe{\n\tprivate byte[] buffer = new byte[16*1024*1024];\n\t...\n}",
+"Secucode":"class [class 명]{\n\tprivate Jframe [var];\n\tprivate byte[] buffer = new byte[16*1024*1024];\n\t...\n}"}

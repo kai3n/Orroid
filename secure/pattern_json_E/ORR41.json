@@ -1,0 +1,4 @@
+{"No":"ORR41", "Subject":"Information Leak of System Data", "Level":"Low",
+"Description":"Exposing system data or debugging information helps an adversary learn about the system and form an attack plan.",
+"Vulncode":"public void [method1](){\n\ttry{\n\t\t[method2]();\n\t} catch (IOException [exception]){\n\t\tSystem.err.printf([excpetion].getMessage());\n\t}\n}\nprivate void [method2] throws IOException{ ... }",
+"Secucode":"public void [method1](){\n\ttry{\n\t\t[method2]();\n\t} catch (IOException [exception]){\n\t\tSystem.err.println(\"IOException Occured\");\n\t}\n}\nprivate void [method2] throws IOException{ ... }"}

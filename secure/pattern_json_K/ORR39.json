@@ -1,0 +1,6 @@
+{"No":"ORR39",
+"Subject":"오류 메시지를 통한 정보 노출",
+"Level":"Medium",
+"Description":"개발자가 에러를 처리할 때 프로그램의 오류 메시지를 외부 환경으로 노출 시키면 프로그램 내부정보가 유출될 수 있다.",
+"Vulncode":"public void onCreate(Bundle savedInstanceState) {\n  super.onCreate(savedInstanceState);\n	try{ throw new IOException();}\n  catch (IOException [exception]) { [exception].printStackTrace(); }\n}",
+"Secucode":"public void onCreate(Bundle savedInstanceState) {\n  super.onCreate(savedInstanceState);\n	try{ throw new IOException();}\n  catch (IOException [exception]) { System.out.println(\"Exception\"); }\n}"}

@@ -1,0 +1,6 @@
+{"No":"ORR25",
+"Subject":"Do not invoke Thread.run()",
+"Level":"Low",
+"Description":"Invoking the Thread.start() method instructs the Java runtime to start executing the thread's run() method using the started thread. \nInvoking a Thread object's run() method directly is incorrect. When a Thread object's run() method is invoked directly, the statements in the run() method are executed by the current thread rather than by the newly created thread. Failure to start threads correctly can cause unexpected behavior.",
+"VulnCode":"public final class Foo implements Runnable {\n\t@Override public void run() {\n\t\t//...\n\t}\n\tpublic static void main(Stirng[] args) {\n\t\tFoo foo = new Foo();\n\t\tnew Thread(foo).run();\n\t}\n}",
+"SecuCode":"public final class Foo implements Runnable {\n\t@Override public void run() {\n\t\t//...\n\t}\n\tpublic static void main(Stirng[] args) {\n\t\tFoo foo = new Foo();\n\t\tnew Thread(foo).start();\n\t}\n}"}

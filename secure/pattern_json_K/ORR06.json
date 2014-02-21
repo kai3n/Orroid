@@ -1,0 +1,6 @@
+{"No":"ORR06", 
+"Subject":"메서드가 반환한 값을 무시하지 않는다", 
+"Level":"Medium", 
+"Description":"메서드는 자신이 성공적으로 호출되었는가의 여부를 알려주기 위해서 특정 값을 반한할 때가 있다. 이 반환값을 무시하고 적절하게 처리하지 않으면 보안상의 문제가 발생할 수 있다.",
+"Vulncode":"public void deleteFile() {\n\tFile somefile = new File(\"someFileName.txt\");\n\tsomefile.delete();\n}",
+"Secucode":"public void deleteFile() {\n\tFile somefile = new File(\"someFileName.txt\");\n\tif( !somefile.delete()) {\n\t\t// 실패에대한 작업\n\t}\n}"}

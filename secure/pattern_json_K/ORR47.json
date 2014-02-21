@@ -1,0 +1,6 @@
+{"No":"ORR47",
+"Subject":"READ_LOGS",
+"Level":"High",
+"Description":"이 권한을 부여하게 되면 App은 다른 App들의 log들을 모두 볼 수 있게 된다. log에는 그 App의 중요 정보나 취약한 사항이 찍힐 수 있기 때문에, \ndebugging을 하는 App이 아닌 이상 이 권한을 가진 App들을 무조건 설치해선 안 된다.",
+"Vulncode":"",
+"Secucode":""}

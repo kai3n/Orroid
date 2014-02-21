@@ -1,0 +1,8 @@
+{"No":"ORR10",
+"Subject":"Do not use locale-dependent methods on locale-dependent data without specifying the appropriate locale",
+"Level":"Medium",
+"Description":"Using locale-dependent methods on locale-dependent data can produce unexpected results when the locale is unspecified. \nIt may be possible to bypass input filters by changing the default locale.",
+"Vulncode":"\"title\".toUpperCase();",
+"Secucode":"1)\n\"title\".toUpperCase(Locale.ENGLISH);\n2)\nLocale.setDefault(Locale.ENGLISH);\n\"title\".toUpperCase();"}
+
+

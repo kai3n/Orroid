@@ -1,0 +1,7 @@
+{"No":"ORR45",
+"Subject":"Com.android.browser.permission.READ_HISTORY_BOOKMARKS\n\t\t\t\t\t.WRITE_HISTORY_BOOKMARKS",
+"Level":"High",
+"Description":"It allows to read or write traces of user, web Browsing history and bookmarks. \n Even though they are not confidential information, these information can be used to understand one's hobby or one's lifestyle. So in normal case you should not install apps requiring this permission.",
+"Vulncode":"",
+"Secucode":""}
+

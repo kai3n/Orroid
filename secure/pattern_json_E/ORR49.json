@@ -1,0 +1,6 @@
+{"No":"ORR49",
+"Subject":"GET_TASKS",
+"Level":"Medium",
+"Description":"GET_TASKS permission allow apps to get information of the tasks of apps running or ran lately. \n Malicious apps can use this permission to kill running apps.",
+"Vulncode":"",
+"Secucode":""}

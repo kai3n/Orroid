@@ -1,0 +1,6 @@
+{"No":"ORR33",
+"Subject":"Cleartext Transmission of Sensitive Information",
+"Level":"High",
+"Description":"Many communication channels can be sniffed by attackers during data transmission. \n So you should use encryption during data transmission.",
+"Vulncode":"public void onCreate(Bundle savedInstanceState) {\n\tint [port] = 443;\n  String [hostname] = \"[hostname]\";\n    Socket [socket] = new Socket([hostname], [port]);\n    InputStream [var1] = [socket].getInputStream();\n  OutputStream [var2] = [socket].getOutputStream();\n    ... //read and write\n    [var1].close();\n    [var2].close();",
+"Secucode":"public void onCreate(Bundle savedInstanceState) {\n\tint [port] = 443;\n  String [hostname] = \"[hostname]\";\n    SocketFactory [socketFactory] = SSLSocketFactory.getDefault();\n    Socket [socket] = new Socket([hostname], [port]);\n    InputStream [var1] = [socket].getInputStream();\n  OutputStream [var2] = [socket].getOutputStream();\n    ... //read and write\n  [var1].close();\n    [var2].close();"}

@@ -1,0 +1,6 @@
+{"No":"ORR14",
+"Subject":"Methods that perform a security check must be declared private or final",
+"Level":"Medium",
+"Description":"Failure to declare a class's method private or final affords the opportunity for a malicious subclass to bypass the security checks performed in the method.",
+"Vulncode":"public [method] {\n\ttry{\n\t\tSecurityManger [var] = System.getSecurityManager();\n\t\tif([var] != null)\n\t\t\t[var].checkRead(\"[파일]\");\n\t\t//Check for permission to read file\n\t} catch (SecurityException [var2]){\n\t\t//Log exception\t}\n}",
+"Secucode":"1)\npublic final [method] {…}\n2)\nprivate [method] {…}"}

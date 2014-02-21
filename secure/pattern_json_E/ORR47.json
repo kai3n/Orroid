@@ -1,0 +1,6 @@
+{"No":"ORR47",
+"Subject":"READ_LOGS",
+"Level":"High",
+"Description":"This permission allow apps to read other apps\' logs. Logs can contain important things or vulnerabilities of the apps. \nSo apps not doing debugging containing this permission should not be installed.",
+"Vulncode":"",
+"Secucode":""}

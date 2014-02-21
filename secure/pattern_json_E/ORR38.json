@@ -1,0 +1,6 @@
+{"No":"ORR38",
+"Subject":"Access Control Bypass using Share User ID",
+"Level":"Low",
+"Description":"When the value of \"android:sharedUserId\" is set in a manifest.xml file in android application, people who have the same ID and signature can access to the information of the program.",
+"Vulncode":"...\n    <manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n package = \"com.example.android.apis\"\n    \tandroid:versionCode=\"1\"\n   \tandroid:versionName=\"10\"\n\t\tandroid:sharedUserId=\"android.uid.developer1\">",
+"Secucode":"...\n    <manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n package = \"com.example.android.apis\"\n    \tandroid:versionCode=\"1\"\n   \tandroid:versionName=\"10\"\n>"}

@@ -1,0 +1,6 @@
+{"No":"ORR51",
+"Subject":"CHANGE_WIFI_STATE",
+"Level":"Low",
+"Description":"This permission allows apps to change the state of WIFI. It can only change WIFI\'s ON/OFF state. This permission is rarely used soley. With other permissions, phone manipulation can be occurred.",
+"Vulncode":"",
+"Secucode":""}

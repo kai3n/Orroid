@@ -1,0 +1,6 @@
+{"No":"ORR36",
+"Subject":"전역적으로 접근 가능한 파일",
+"Level":"Medium",
+"Description":"파일 생성 시 MODE_WORLD_READABLE이나 MODE_WORLD_WRITABLE을 인자로 주면 다른 응용프로그램에서 접근할 수 있게 된다.",
+"Vulncode":"public void onCreate(Bundle savedInstanceState) {\n\tsuper.onCreate(savedInstanceState);\n\ttry {\n\t\tFileOutputStream [var1] = openFileOutput(\"[filename]\", MODE_WORLD_READABLE);\n\t\tOutputStreamWriter [var2] = new OutputStreamWriter([var1]);\n\t\t[var2].write(\"[string]\");\n\t\t[var2].close();\n\t\t[var1].close();\n\t} catch (Throwable [t]){\n\t\t...\n\t}\n}",
+"Secucode":"public void onCreate(Bundle savedInstanceState) {\n\tsuper.onCreate(savedInstanceState);\n\ttry {\n\t\tFileOutputStream [var1] = openFileOutput(\"[filename]\", MODE_PRIVATE);\n\t\tOutputStreamWriter [var2] = new OutputStreamWriter([var1]);\n\t\t[var2].write(\"[string]\");\n\t\t[var2].close();\n\t\t[var1].close();\n\t} catch (Throwable [t]){\n\t\t...\n\t}\n}"}

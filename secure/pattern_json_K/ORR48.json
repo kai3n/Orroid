@@ -1,0 +1,6 @@
+{"No":"ORR48",
+"Subject":"ACCESS_FINE_LOCATION",
+"Level":"Medium",
+"Description":"대중적으로 이용하는 Google Map이나 Naver 지도 App등에서 꼭 필요한 권한이다. 자신의 현 위치를 알려준다.",
+"Vulncode":"",
+"Secucode":""}

@@ -1,0 +1,6 @@
+{"No":"ORR21",
+"Subject":"Do not use public static nonfinal variables",
+"Level":"Medium",
+"Description":"Client code can trivially access public static fields. Neither reads nor writes to such variables are checked by a security manager. Furthermore, new values cannot be validated programmatically before they are stored in these fields.\n So you should not use public static nonfinal variables.",
+"Vulncode":"1)\npublic class [class]{\n\tpublic static field [function table class] [var];\n}\n2)\nclass [class] implements Serializable {\n\tpublic static [var] = [value];\n\t...\n}",
+"Secucode":"1)\npublic static final [function table class] [var];\n\n2)\nprivate static final [var] = [value];"}

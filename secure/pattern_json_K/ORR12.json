@@ -1,0 +1,6 @@
+{"No":"ORR12",
+"Subject":"method 인자를 검증한다.",
+"Level":"High",
+"Description":"메서드 인자를 검증하지 않은체 연산을 수행하면 런타임 예외가 발생하거나 클래스 불변 성질을 위반하게 되어, 객체 상태의 일관성을 훼손할 수 있다.",
+"Vulncode":"private [data_type] [var] = null;\n\n[method1]([data_type] [param]){\n\t[var] = [param];\n}\n[method2](){\n\t//[var] 처리 수행\n}",
+"Secucode":"[method1]([data_type] [param]){\n\tif([param] == null){\t\t//처리\n\t}\n\tif(isInvalidState([param])) {\t\t//잘못된 상태 처리\n\t}\n\n\t[var] = [param];\n}\n\n[method2]{\n\tif([var] == null) {\t\t//[param]이 null인경우 처리\t}\n}\n\n* 예외\n\n method호출 전, 인자로 넘어가는 값을 검증하면 method내부에서의 검증 과정은\n필요 없다.\n 모든 method의 모든 인자를 완전히 검증하면 비용과 복잡도가 많이 증가하게 된다.\n신뢰하지 않은 코드에 접하는 API경계에서만 인자를 검증하는 방법을 고려하도록 한다."}

@@ -1,0 +1,6 @@
+{"No":"ORR07",
+"Subject":"Detect and handle file-related errors",
+"Level":"Medium",
+"Description":"Java's file-manipulation methods often indicate failure with a return value instead of throwing an exception. \nConsequently, programs that ignore the return values from file operations often fail to detect that those operations have failed.",
+"Vulncode":"File file = new File(args[0]);\nfile.delete();",
+"Secucode":"1)\nFile file = new File(args[0]);\nif(!file.delete()) {\n\t// 삭제실패\n}\n2)\nPath file = new File(args[0]).toPath();\ntry {\n\tFiles.delete(file);\n} catch (IOException x) {\n\tSystem.out.println(\"Can't erase\");}"}

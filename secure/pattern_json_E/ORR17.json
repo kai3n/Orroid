@@ -1,0 +1,6 @@
+{"No":"ORR17",
+"Subject":"Do not modify the underlying collection when an iteration is in progress",
+"Level":"Low",
+"Description":"Modifying a Collection while iterating over it results in undefined behavior.",
+"Vulncode":"class [class] {\n\tpublic static void main (String[] args) {\n\t\tList <String> [list] = new ArrayList<String>();\n\t\t[list].add(\"[string1]\");\n\t\t[list].add(\"[string2]\");\n\n\t\tIterator [iter] = [list].iterator();\n\t\twhile( [iter].hashNext()) {\n\t\t\tString [s] = (String)[iter].next();\n\t\t\tif( [s].equals(\"[string1]\")) {\n\t\t\t\t[list].remove([s]);\n\t\t\t}\n\t\t}\n\t}\n}",
+"Secucode":"\n...\nif([s].equals(\"[string]\")) {\n\t[iter].remove();\n}\n..."}

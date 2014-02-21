@@ -1,0 +1,6 @@
+{"No":"ORR35",
+"Subject":"적절하지 않은 난수값의 사용",
+"Level":"Medium",
+"Description":"예측가능한 난수를 사용하면 Attacker는 다음 숫자를 예상하여 시스템을 공격할 수 있다. \n seed를 사용하여 보다 예측하기 어렵게 만들어 주는 것이 좋다.",
+"Vulncode":"public double [method]{\n\treturn Math.random();\n}",
+"Secucode":"import java.util.Random;\nimport java.util.Date;\n\n...\n\npublic int [method]() {\n\tRandom [var1] = new Random();\n\t[var1].setSeed(new Date().getTime());\n\treturn ([var1].nextInt()%6) +1;\n}"}

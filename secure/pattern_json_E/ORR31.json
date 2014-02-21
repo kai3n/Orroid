@@ -1,0 +1,6 @@
+{"No":"ORR31",
+"Subject":"Missing check for Null Parameter",
+"Level":"Medium",
+"Description":"When defining Object.equals(), Comparable.compareTo() and Comparator.compare() methods,\nyou should return certain value when parameter is null, according to Java standards. Otherwise, it can lead to unintended behavior.",
+"Vulncode":"public void onCreate(Bundle savedInstanceState){\n\tsuper.onCreate(savedInstanceState);\n}\n\npublic boolean equals(Object [param]){\n    return (toString().equals([param].toString()));\n}",
+"Secucode":"public boolean equals(Object [param]){\n\tif ([param] != null){\n  \treturn (toString().equals([param].toString()));\n    else\n    \treturn false;\n}\n}"}

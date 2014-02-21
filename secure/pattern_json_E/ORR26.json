@@ -1,0 +1,6 @@
+{"No":"ORR26",
+"Subject":"Always invoke wait() and await() methods inside a loop",
+"Level":"Low",
+"Description":"Failure to encase the wait() or await() methods inside a while loop can lead to indefinite blocking and denial of service (DoS).",
+"VulnCode":"synchronized (object) {\n\tif(<condition does not hold>){\n\t\tobject.wait();\n\t}\n\t// Proceed when condition holds\n}",
+"SecuCode":"synchronized (object) {\n\twhile(<condition does not hold>){\n\t\tobject.wait();\n\t}\n\t// Proceed when condition holds\n}"}

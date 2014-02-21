@@ -1,0 +1,8 @@
+{"No":"ORR10",
+"Subject":"locale에 의존하는 데이터에는 locale에 의존하는 메소드를 사용하지 않는다",
+"Level":"Medium",
+"Description":"로케일을 설정하지 않고, 로케일에 의존하는 데이터로 호출하면 예상치 못한 결과가 나올 수 있다. \n기본 로케일인 locale.ENGLISH를 변경하면 해당 데이터가 검증 필터를 빠져나갈 수 있기 때문이다.",
+"Vulncode":"\"title\".toUpperCase();",
+"Secucode":"1)\n\"title\".toUpperCase(Locale.ENGLISH);\n2)\nLocale.setDefault(Locale.ENGLISH);\n\"title\".toUpperCase();"}
+
+

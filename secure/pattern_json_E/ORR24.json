@@ -1,0 +1,6 @@
+{"No":"ORR24",
+"Subject":"Do not invoke overridable methods from the readObject() method",
+"Level":"Low",
+"Description":"The readObject() method must not call any overridable methods. \nInvoking overridable methods from the readObject() method can lead to initialization errors.",
+"Vulncode":"private void readObject(final ObjectInputStream [stream]) throws IOException, ClassNotFoundException {\n\t[method1]();\n\t[stream].defaultReadObject();\n}\npublic void [method1](){\n\t...\n}",
+"Secucode":"1)\nprivate void readObject(final ObjectInputStream [stream]) throws IOException, ClassNotFoundException {\n\t[stream].defaultReadObject();\n}\n\n2)\nprivate void readObject(final ObjectInputStream [stream]) throws IOException, ClassNotFoundException {\n\t[method1]();\n\t[stream].defaultReadObject();\n}\nprivate void [method1](){\n\t...\n}\n\n* The readObject() method may invoke the overridable methods defaultReadObject() and readFields() in class java.io.ObjectInputStream."}

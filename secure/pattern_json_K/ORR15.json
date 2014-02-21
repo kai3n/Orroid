@@ -1,0 +1,6 @@
+{"No":"ORR15",
+"Subject":"Obejct.equals() method를 오버라이드하는 class에서는 반드시 hashcode()도 오버라이드 해야한다.",
+"Level":"Low",
+"Description":"Object.equals() method와 함께 hashCode()메서드를 같이 구현해야 정상적인 결과만 나온다.",
+"Vulncode":"class [class 명] {\n\tpublic boolean equals([param]) {\n\t\t...\n\t}\tpublic static void main(String[] args){\n\t\t...\n\t}\n}",
+"Secucode":"class [class 명] {\n\tpublic boolean equals([param]) {\n\t\t@Override\n}\n\tpublic hashcode(){\n\t\t@override\n}\n}"}

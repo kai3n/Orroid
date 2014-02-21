@@ -1,0 +1,6 @@
+{"No":"ORR09", 
+"Subject":"Do not log unsanitized user input", 
+"Level":"Medium",
+"Description":"A log injection vulnerability arises when a log entry contains unsanitized user input. A malicious user can insert fake log data and consequently deceive system administrators as to the system's behavior.",
+"Vulncode":"if (loginSuccessful) {\n\tlogger.severe(\"User login succeeded for : \" + username);\n} else {\n\tlogger.severe(\"User login failed for : \" + username);}",
+"Secucode":"if (!Pattern.mathces(\"[A-Za-z0-9_]+\", username)) {\n\tlogger.severe(\"User login failed for unauthrized uesr\");\n} else if (loginSuccessful) {\n\tlogger.severe(\"User login succeded for : \" + username);\n} else {\n\tlogger.severe(\"User login failed for : \" + username);\n}"}

@@ -1,0 +1,6 @@
+{"No":"ORR50",
+"Subject":"RECEIVE_BOOT_COMPLETED",
+"Level":"Low",
+"Description":"보안상의 문제는 크게 없다. 다만 부팅 시 시간이 지체된다던가 사용자가 인지하지 못한 상태에서 application이 돌아가는 가 하는 사용자의 불편함이 뒤따를 수 있다.",
+"Vulncode":"",
+"Secucode":""}

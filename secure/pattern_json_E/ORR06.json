@@ -1,0 +1,6 @@
+{"No":"ORR06", 
+"Subject":"Do not ignore values returned by methods", 
+"Level":"Medium", 
+"Description":"Methods can return values to communicate failure or success or to update local objects or fields. Security risks can arise when method return values are ignored or when the invoking method fails to take suitable action.",
+"Vulncode":"public void deleteFile() {\n\tFile somefile = new File(\"someFileName.txt\");\n\tsomefile.delete();\n}",
+"Secucode":"public void deleteFile() {\n\tFile somefile = new File(\"someFileName.txt\");\n\tif( !somefile.delete()) {\n\t\t//handle failure to delete the file\n\t}\n}"}

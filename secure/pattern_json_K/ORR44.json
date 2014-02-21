@@ -1,0 +1,6 @@
+{"No":"ORR44", 
+"Subject":"READ_CONTACTS, WRITE_CONTACTS", 
+"Level":"Low",
+"Description":"Social App을 실행하면 해당 App은 contact data을 읽어 들인다. 일반적인 Social App들은 이런 기능을 가지고 있지만 다른 App들이 이럴 경우, 개인정보 침해로까지 이어질 수 있다.",
+"Vulncode":"<uses-permission\n\tandroid:name=\"android.permission.CALL_PHONE\"\n\t...\n/>",
+"Secucode":"public class MyActivity extends Activity {\n\tprivate static final int GET_CONTACT_REQ = 1;\n\t...\tpublic void onClick(View v){\n\t\tIntent [intent] = new Intent(Intent.ACTION_GET_CONTENT);\n\t\t[intent].setType(Phone.CONTENT_ITEM_TYPE);\n\t\tsuper.startActivityForResult([intent], GET_CONTACT_REQ);\n\t}\n\t\tpublic void onActivityResult(int requestCode, int resultCode, Intent data){\n\t\tif(requestCode == GET_CONTACT_REQ && resultCode == RESULT_OK && data != null){\n\t\t\tUri [uri] = data.getData();\n\t\t\tif ([uri] != null){\n\t\t\t\ttry{\n\t\t\t\t\tCursor [cursor] = getContentResolver().query(\n\t\t\t\t\t\t\t\t\t\t\t[uri],\n\t\t\t\t\t\t\t\t\t\t\tnew String[] {Contacts.DISPLAY_NAME, Phone.NUMBER},\n\t\t\t\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\t\t\t\tnull);\n\t\t\t\t\tif([cursor].moveToFirst()){\n\t\t\t\t\t\tString name = [cursor].getString(0);\n\t\t\t\t\t\tString phone = [cursor].getStirng(1);\n\t\t\t\t\t}\n\t\t\t\t} catch (...){\n\t\t\t\t\t...\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}\n"}

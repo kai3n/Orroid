@@ -1,0 +1,6 @@
+{"No":"ORR46",
+"Subject":"READ_CALENDAR, WRITE_CALENDAR",
+"Level":"Low",
+"Description":"Apps reading and writing calendar are generally \'work schedule management app\'. If other apps abuse this permission, bothering things such as disappearing of the contents of the memo or leaking of important shedule can arise. So you should be careful.",
+"Vulncode":"",
+"Secucode":""}

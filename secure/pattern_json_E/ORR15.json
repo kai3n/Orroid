@@ -1,0 +1,6 @@
+{"No":"ORR15",
+"Subject":"Classes that define an equals() method must also define a hashCode() method",
+"Level":"Low",
+"Description":"Overriding the equals() method without overriding the hashCode() method can lead to unexpected results.",
+"Vulncode":"class [class name] {\n\tpublic boolean equals([param]) {\n\t\t...\n\t}\tpublic static void main(String[] args){\n\t\t...\n\t}\n}",
+"Secucode":"class [class name] {\n\tpublic boolean equals([param]) {\n\t\t@Override\n}\n\tpublic hashcode(){\n\t\t@override\n}\n}"}

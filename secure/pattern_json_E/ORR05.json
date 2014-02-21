@@ -1,0 +1,6 @@
+{"No":"ORR05",
+"Subject":"Do not catch NullPointerException or any of its ancestors",
+"Level":"Medium",
+"Description":"First, catching NullPointerException adds significantly more performance overhead than simply adding the necessary null checks.\nSecond, when multiple expressions in a try block are capable of throwing a NullPointerException, it is difficult or impossible to determine which expression is responsible for the exception because the NullPointerException catch block handles any NullPointerException thrown from any location in the try block.\n Likewise, programs must not catch RuntimeException, Exception, or Throwable which are referenced in ERR07-J.",
+"Vulncode":"1)\n[method] ([param]){\n\ttry{\n\t\t[var][] = [param].split(\" \");\n\t\t...\n\t} catch (NullPointerException [exception]){\n\t\treturn false;\n\t}\n}\n2)\ntry{\n\t...\n} catch (ArithmeticException [exception1]){\n\tthrow new DivideByZeroException();\n} catch (Exception [exception2]){\n\t...\n}",
+"Secucode":"1)\n[method] ([param]){\n\tif([param] == null){\n\t\treturn false;\n\t}\n\t...\n}\n2)\nimport java.to.IOException;\n\ntry{\n\t...\n} catch (ArithmeticException [exception1]){\n\tthrow new DivideByZeroException();\n} catch (IOException [exception2]){\n\tExceptionReporter.report([exception2]);\n}\n"}

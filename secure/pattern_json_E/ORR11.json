@@ -1,0 +1,6 @@
+{"No":"ORR11",
+"Subject":"Do not perform operations that can block while holding a lock",
+"Level":"Low",
+,"Description":"Holding locks while performing time-consuming or blocking operations can severely degrade system performance and can result in starvation. Furthermore, deadlock can result if interdependent threads block indefinitely.\n Blocking operations include network, file, console I/O, object serialization and Deferring a thread indefinitely",
+"Vulncode":"public synchronized void [method](long [param]) throws InterruptedException {\n\t...\n\tThread.sleep([param]);\n}",
+"Secucode":"public synchronized void [method](long [param]) throws InterruptedException {\n\t...\n\twhile([조건]) {\n\t\twait([param]);\n\t}\n}"}

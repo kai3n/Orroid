@@ -1,0 +1,6 @@
+{"No":"ORR26",
+"Subject":"wait()와 await() 메서드는 언제나 루프 안에서 호출한다",
+"Level":"Low",
+"Description":"wait()나 await() 메서드를 while()문 안에 넣지 않으면 무한히 블럭되거나 서비스 거부(Denial-of-Service, DOS)를 일으킬 수 있다.",
+"VulnCode":"synchronized (object) {\n\tif(<대기할 조건>){\n\t\tobject.wait();\n\t}\n\t// 조건이 만족된다고 판단하고 계속처리\n}",
+"SecuCode":"synchronized (object) {\n\twhile(<대기할 조건>){\n\t\tobject.wait();\n\t}\n\t// 조건이 만족된다고 판단하고 계속처리\n}"}

@@ -1,0 +1,6 @@
+{"No":"ORR43", 
+"Subject":"CALL_PHONE", 
+"Level":"High",
+"Description":"SEND_SMS, RECEIVE_SMS만큼이나 주의해야 하는 permission이다. Google Talk이나 Skype같이 합법적으로 해당 기능을 실행하는 프로그램이지 않는 이상 이 permission을 요청하는 App들은 설치하지 않는 것이 좋다.",
+"Vulncode":"<uses-permission\n\tandroid:name=\"android.permission.CALL_PHONE\"\n\t...\n/>",
+"Secucode":"public class MyActivity extends Activity {\n\t...\n\tpublic void onClick(View v){\n\t\tUri [var1] = Uri.parse(\"tel:[number]\");\n\t\tIntent [intent] = new Intent(Intent.ACTION_DIAL);\n\t\t[intent].setData([var1]);\n\t\tsuper.startActivity([intent]);\n\t}\n"}

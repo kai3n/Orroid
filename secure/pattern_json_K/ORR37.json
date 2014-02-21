@@ -1,0 +1,6 @@
+{"No":"ORR37",
+"Subject":"외부에서 접근할 수 있는 Components",
+"Level":"Low",
+"Description":"안드로이드 어플리케이션의 manifest.xml파일에서 컴포넌트가 android:exported=\"true\"로 설정되어 있을 경우,\n 외부에서 해당 컴포넌트에 인텐트를 전달하여 활성화 시킬 수 있다. 이는 의도치 않은 결과를 초래 할 수 있다.\n 그러므로 외부에 접근권한을 제공하지 않아야 한다.",
+"Vulncode":"...\n<application android:icon=\"@drawable/icon\" android:label = \"@string/label\">\n\t<service android:name=\".syncadapter.SyncService\" android:exported = \"true\">\n\t<intent-filter>\n\t\t...",
+"Secucode":"...\n<application android:icon=\"@drawable/icon\" android:label = \"@string/label\">\n\t<service android:name=\".syncadapter.SyncService\" android:exported = \"false\">\n\t<intent-filter>\n  \t\t..."}

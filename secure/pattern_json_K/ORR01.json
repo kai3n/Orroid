@@ -1,0 +1,6 @@
+{"No":"ORR01",
+"Subject":"필수적으로 처리되어야 하는 예외를 무시하거나 억제하지 않는다",
+"Level":"Low",
+"Description":"예외는 반드시 적절한 처리를 해야한다. 예외처리는 catch 블럭이 올바른 불변 성질을 유지하고 실행하는 것을 보장한다. \n적절히 처리하지 않을 경우 의도치 않은 결과가 나타날 수 있다.",
+"Vulncode":"1)\ntry{\n\t...\n}catch (IOException [var]){\n\t[var].printStacktrace();\n}\n2)\nclass [class 명] implements Runnable{\n\tpublic void run(){\n\t\ttry{\n\t\t\t...\n\t\t}catch (InterruptedException [var]){n\t\t}\n\t}\n}",
+"Secucode":"1)\nboolean volatile [var] = false;\ndo {\n\ttry{\n\t\t//요청한 내용이 존재하지 않으면 Exception을 발생시킨다.\n\t\t[var] = true;\n\t} catch ([Exception]){\n\t\t//다른 입력을 받아들이게 다시 요청함.\n\t}\n} while ([var] != true);\n2)\ncatch (InterruptedException [var]){\n\tThread.currentThread().interrupt();\n}"}

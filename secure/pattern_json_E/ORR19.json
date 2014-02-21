@@ -1,0 +1,6 @@
+{"No":"ORR19",
+"Subject":"Declare data members as private and provide accessible wrapper methods",
+"Level":"Medium",
+"Description":"Failing to declare data members private can defeat encapsulation.",
+"Vulncode":"public class [class]{\n\tpublic [var];\n\t[method 1] ([param1]){\n\t\t[var] =  ...;\n\t}\n\t...\n}",
+"Secucode":"public class [class]{\n\tprivate [var];\n\t[method 1] (){\n\t\treturn [var];\n\t\t...\n}\n}"}

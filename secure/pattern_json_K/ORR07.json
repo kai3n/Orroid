@@ -1,0 +1,6 @@
+{"No":"ORR07",
+"Subject":"파일관련 에러를 탐지하고 처리한다",
+"Level":"Medium",
+"Description":"Java의 파일 조작 메서드는 종종 에러값을 반환하여 파일 조작이 실패한 것을 알려준다. \n그래서 메서드가 반환하는 값을 신경쓰지 않으면 해당 연산이 제대로 수행되었는지 알 수 없게 된다.",
+"Vulncode":"File file = new File(args[0]);\nfile.delete();",
+"Secucode":"1)\nFile file = new File(args[0]);\nif(!file.delete()) {\n\t// 삭제실패\n}\n2)\nPath file = new File(args[0]).toPath();\ntry {\n\tFiles.delete(file);\n} catch (IOException x) {\n\tSystem.out.println(\"Can't erase\");}"}

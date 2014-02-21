@@ -1,0 +1,6 @@
+{"No":"ORR43", 
+"Subject":"CALL_PHONE", 
+"Level":"High",
+"Description":"You should be careful not only SEND_SMS, RECEIVE_SMS but also CALL_PHONE permission. If do not use CALL_PHONE permission legitimately like Google Talk or Skype, you should not download apps that require that permissoin.",
+"Vulncode":"<uses-permission\n\tandroid:name=\"android.permission.CALL_PHONE\"\n\t...\n/>",
+"Secucode":"public class MyActivity extends Activity {\n\t...\n\tpublic void onClick(View v){\n\t\tUri [var1] = Uri.parse(\"tel:[number]\");\n\t\tIntent [intent] = new Intent(Intent.ACTION_DIAL);\n\t\t[intent].setData([var1]);\n\t\tsuper.startActivity([intent]);\n\t}\n"}

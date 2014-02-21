@@ -1,0 +1,6 @@
+{"No":"ORR08", 
+"Subject":"Normalize strings before validating them", 
+"Level":"High", 
+"Description":"Many applications that accept untrusted input strings employ input filtering and validation mechanisms based on the strings' character data.\n When implemented, this form of validation must be performed only after normalizing the input.",
+"Vulncode":"String s = \"\uFE64\"+\"script\"+\"\uFE65\";\nPattern pattern = Pattern.compiler(\"[<>]\");\nMatcher matcher = pattern.matcher(s);\nif(matcher.find()) { \n\tthrow new IllegalStateException();\n} else {\n\t...}\n\ns = Normalizer.normalize(s, Form.NFKC);",
+"Secucode":"String s = \"\uFE64\"+\"script\"+\"\uFE65\";\ns = Normalizer.normalize(s, Form.NFKC);\n\nPattern pattern = Pattern.compiler(\"[<>]\");\nMatcher matcher = pattern.matcher(s);\nif(matcher.find()) {\n\tthrow new IllegalStateException();\n} else {\n\t...\n}"}

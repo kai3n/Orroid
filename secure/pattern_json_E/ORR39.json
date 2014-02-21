@@ -1,0 +1,6 @@
+{"No":"ORR39",
+"Subject":"Information exposure through an error message",
+"Level":"Medium",
+"Description":"The software can generate an error message that includes sensitive information about its environment, users, or associated data.",
+"Vulncode":"public void onCreate(Bundle savedInstanceState) {\n  super.onCreate(savedInstanceState);\n    try{ throw new IOException();}\n  catch (IOException [exception]) { [exception].printStackTrace(); }\n}",
+"Secucode":"public void onCreate(Bundle savedInstanceState) {\n  super.onCreate(savedInstanceState);\n    try{ throw new IOException();}\n  catch (IOException [exception]) { System.out.println(\"Exception\"); }\n}"}

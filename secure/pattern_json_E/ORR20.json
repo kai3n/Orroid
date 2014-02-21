@@ -1,0 +1,6 @@
+{"No":"ORR20",
+"Subject":"Compare classes and not class names",
+"Level":"High",
+"Description":"Comparing classes solely using their names can allow a malicious class to bypass security checks and gain access to protected resources. In other words, it become vulnerable to a mix-and-match attack.",
+"Vulncode":"1)\nif( [class object].getClass().getName().equals(\"[class]\") ){\n\t...\n}\n2)\nif([class_obj1].getClass().getName().equals([class_obj2].getClass().getName()){\n\t...\n}",
+"Secucode":"1)\nif([class object].getClass() == this.getClass().getClassLoader().loadClass(\"[class]\")){\n\t...\n}\n2)\nif([class_obj1].getClass() == [class_obj2].getClass()){\n\t...\n}"}

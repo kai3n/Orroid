@@ -1,0 +1,6 @@
+{"No":"ORR50",
+"Subject":"RECEIVE_BOOT_COMPLETED",
+"Level":"Low",
+"Description":"This permission doesn't have special security problem. But inconvenience can follow such as delay of booting or execution of apps under user\'s recognition.",
+"Vulncode":"",
+"Secucode":""}

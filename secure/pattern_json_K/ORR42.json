@@ -1,0 +1,6 @@
+{"No":"ORR42",
+"Subject":"SEND_SMS, RECEIVE_SMS",
+"Level":"High",
+"Description":"SMS나 MMS를 주고 받을 수 있게 해주는 permission이다. 악성 App의 경우 SMS나 MMS를 계속해서 보내게 하여 요금폭탄을 선물한다.",
+"Vulncode":"<uses-permission\n\tandroid:name=\"android.permission.SEND_SMS\"\n\t...\n/>",
+"Secucode":"public class MyActivity extends Activity {\n\t...\n\tpublic void onClick(View v){\n\t\tUri [var1] = Uri.parse(\"sms:[number]\");\n\t\tIntent [intent] = new Intent(Intent.ACTION_VIEW);\n\t\t[intent].setData([var1]);\n\t\t[intent].putExtra(Intent.EXTRA_TEXT, \"Hello\");\n\t\tsuper.startActivity([intent]);\n\t}\n"}

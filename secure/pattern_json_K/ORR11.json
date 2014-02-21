@@ -1,0 +1,6 @@
+{"No":"ORR11",
+"Subject":"락을 활성화한 후 블럭될 수 있는 연산을 수행하지 않는다",
+"Level":"Low",
+"Description":"시간이 오래 걸리거나 블럭될 수 있는 연산 시, 락을 걸게 되면 시스템 성능을 심각하게 떨어뜨리게 된다. 뿐만 아니라 데드락이 발생할 수 있다.\n 블럭될 수 있는 연산에는 네트워크, 파일, 콘솔 입출력, 객체 직렬화 그리고 스레드를 무한히 지연시키는 처리가 존재한다.",
+"Vulncode":"public synchronized void [method](long [param]) throws InterruptedException {\n\t...\n\tThread.sleep([param]);\n}",
+"Secucode":"public synchronized void [method](long [param]) throws InterruptedException {\n\t...\n\twhile([조건]) {\n\t\twait([param]);\n\t}\n}"}

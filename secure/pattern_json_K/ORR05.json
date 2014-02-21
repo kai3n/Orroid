@@ -1,0 +1,6 @@
+{"No":"ORR05",
+"Subject":"NullPointerException과 상위 예외를 잡지 않는다",
+"Level":"Medium",
+"Description":"Null pointer인지 조건문으로 검사하는 것 보다 NullPointerException으로 잡게 되면 성능의 부담이 커진다.\n그리고 try블럭 내부에 NullPointerException이 여러 식으로 발생한다면 어느 식이 해당 예외를 발생시켰는지 구분하기 어렵다.\n 이런 이유로 ERR07-J에서 언급한 RuntimeException이나 Exception등을 사용해서도 안 된다.",
+"Vulncode":"1)\n[method] ([param]){\n\ttry{\n\t\t[var][] = [param].split(\" \");\n\t\t...\n\t} catch (NullPointerException [exception]){\n\t\treturn false;\n\t}\n}\n2)\ntry{\n\t...\n} catch (ArithmeticException [exception1]){\n\tthrow new DivideByZeroException();\n} catch (Exception [exception2]){\n\t...\n}",
+"Secucode":"1)\n[method] ([param]){\n\tif([param] == null){\n\t\treturn false;\n\t}\n\t...\n}\n2)\nimport java.to.IOException;\n\ntry{\n\t...\n} catch (ArithmeticException [exception1]){\n\tthrow new DivideByZeroException();\n} catch (IOException [exception2]){\n\tExceptionReporter.report([exception2]);\n}\n"}

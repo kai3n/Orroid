@@ -1,0 +1,6 @@
+{"No":"ORR09", 
+"Subject":"새니타이즈하지 않은 사용자입력은 로그에 남기지 않는다", 
+"Level":"Medium",
+"Description":"새니타이즈하지 않은 사용자 입력을 로그에 남길 경우, Attacker은 가짜 데이터를 넣어 시스템 관리자로하여금 시스템 작동을 오해하게 속일 수 있다.",
+"Vulncode":"if (loginSuccessful) {\n\tlogger.severe(\"User login succeeded for : \" + username);\n} else {\n\tlogger.severe(\"User login failed for : \" + username);}",
+"Secucode":"if (!Pattern.mathces(\"[A-Za-z0-9_]+\", username)) {\n\tlogger.severe(\"User login failed for unauthrized uesr\");\n} else if (loginSuccessful) {\n\tlogger.severe(\"User login succeded for : \" + username);\n} else {\n\tlogger.severe(\"User login failed for : \" + username);\n}"}

@@ -1,0 +1,6 @@
+{"No":"ORR51",
+"Subject":"CHANGE_WIFI_STATE",
+"Level":"Low",
+"Description":"WIFI의 상태를 바꿀 수 있도록 해주는 permission이다. 단지 WIFI의 ON/OFF를 할 수 있게 해주며, 홀로 사용하는 경우는 거의 없고 다른 permission과 함께 사용되어 phone 조작에 이용될 수 있다.",
+"Vulncode":"",
+"Secucode":""}
