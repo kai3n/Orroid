@@ -1,0 +1,6 @@
+{"No":"ORR67",
+"Subject":"Do not use createInsecureRfcommSocketToServiceRecord",
+"Level":"Low",
+"Description":"Use createRfcommSocketToServiceRecord(UUID) if an encrypted and authenticated communication channel is desired.",
+"Vulncode":"createInsecureRfcommSocketToServiceRecord(UUID uuid)",
+"Secucode":"createRfcommSocketToServiceRecord(UUID uuid)"}

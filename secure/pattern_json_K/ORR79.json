@@ -1,0 +1,6 @@
+{"No":"ORR79",
+"Subject":"PrivilegedAction, PrivilegedExceptionAction함수 사용",
+"Level":"Medium",
+"Description":"java.security.PrivilegedAction<T>와 java.security.PrivilegedExceptionAction<T>는 이제 더 이상 사용되지 않는 함수이다. 이 함수를 사용해서는 안 된다.",
+"Vulncode":"PrivilegedAction, PrivilegedExceptionAction",
+"Secucode":"-"}

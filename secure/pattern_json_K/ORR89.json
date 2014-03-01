@@ -1,0 +1,6 @@
+{"No":"ORR89",
+"Subject":"showFindDialog 함수 사용",
+"Level":"Low",
+"Description":"showFindDialog 함수는 모든 안드로이드 버전에서 안정적으로 작동하지 않는다. 대신 findAllAsync() 함수를 사용하면 안정적으로 작동한다.",
+"Vulncode":"showFindDialog(String text, boolean showIme)",
+"Secucode":"WebView.findAllAsync()"}

@@ -1,0 +1,6 @@
+{"No":"ORR72",
+"Subject":"Do not use deprecated function of Display class",
+"Level":"Low",
+"Description":"getHeight(), getOrientation(), getPixelFormat(), getWidth() methods were deprecated.",
+"Vulncode":"1) getHeight(), 2) getOrientation(), 3) getPixelFormat(), 4) getWidth()",
+"Secucode":"1) getSize(Point), 2) getRotation(), 3) No longer need to use, 4) getSize(Point)"}

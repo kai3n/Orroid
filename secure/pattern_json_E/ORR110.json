@@ -1,0 +1,6 @@
+{"No":"ORR110",
+"Subject":"Do not use android.provider.Settings.System.ANDROID_ID",
+"Level":"Low",
+"Description":"This constant was deprecated in API level 3. Use Secure.ANDROID_ID instead.",
+"Vulncode":"System.ANDROID_ID",
+"Secucode":"Secure.ANDROID_ID"}

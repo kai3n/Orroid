@@ -1,0 +1,6 @@
+{"No":"ORR78",
+"Subject":"Do not use findAll function",
+"Level":"Low",
+"Description":"FindAll method was deprecated in API level 16. Use findAllAsync(String) instead.",
+"Vulncode":"findAll(String)",
+"Secucode":"findAllAsync(String)"}

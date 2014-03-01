@@ -1,0 +1,6 @@
+{"No":"ORR110",
+"Subject":"android.provider.Settings.System.ANDROID_ID 사용",
+"Level":"Low",
+"Description":"System.ANDROID_ID은 더 이상 사용이 권장되지 않는다. 대신 Secure.ANDROID_ID 상수를 사용하라.",
+"Vulncode":"System.ANDROID_ID",
+"Secucode":"Secure.ANDROID_ID"}

@@ -1,0 +1,6 @@
+{"No":"ORR105",
+"Subject":"Do not use onSignalStrengthChanged(int asu)",
+"Level":"Low",
+"Description":"This method was deprecated in API level 5. Use onSignalStrengthsChanged(SignalStrength).",
+"Vulncode":"onSignalStrengthChanged(int asu)",
+"Secucode":"onSignalStrengthsChanged(SignalStrength)"}

@@ -1,0 +1,6 @@
+{"No":"ORR66",
+"Subject":"Do not use getInsecure",
+"Level":"Low",
+"Description":"Sockets created using this function are vulnerable to man-in-the-middle attacks.",
+"Vulncode":"getInsecure(int, SSLSessionCache)",
+"Secucode":"createSocket(String host, int port), createSocket(String host, int port, InetAddress localAddr, int localPort), createSocket(Socket k, String host, int port, boolean close)"}

@@ -1,0 +1,6 @@
+{"No":"ORR112",
+"Subject":"android.provider.Settings.System.AUTO_TIME 사용",
+"Level":"Low",
+"Description":"System.AUTO_TIME은 더 이상 사용이 권장되지 않는다. 대신 Global.AUTO_TIME 상수를 사용하라.",
+"Vulncode":"System.AUTO_TIME",
+"Secucode":"Global.AUTO_TIME"}

@@ -1,0 +1,6 @@
+{"No":"ORR74",
+"Subject":"Implicit intent may be dangerous",
+"Level":"Low",
+"Description":"Note that ordered broadcasts can be ¡°consumed¡± by a recipient, so they may not be delivered to all applications. If you are sending an intent that must be delivered to a specific receiver, then you must use an explicit intent that declares the receiver by nameintent.",
+"Vulncode":"Intent i = new Intent(Intent.ACTION_[behavior]);",
+"Secucode":"Intent intent = new Intent(SourceClass.this, DestinationClass.class);"}

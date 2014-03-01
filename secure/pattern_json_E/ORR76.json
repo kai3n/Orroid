@@ -1,0 +1,6 @@
+{"No":"ORR76",
+"Subject":"Do not use setJavaScriptEnabled()",
+"Level":"Low",
+"Description":"If your application does not directly use JavaScript within a WebView, do not call setJavaScriptEnabled(). By default, WebView does not execute JavaScript so cross-site-scripting is not possible.",
+"Vulncode":"setJavaScriptEnabled(TRUE)",
+"Secucode":"Do not use setJavaScriptEnabled if you don't use javascript."}

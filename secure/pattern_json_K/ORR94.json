@@ -1,0 +1,6 @@
+{"No":"ORR94",
+"Subject":"com.google.android.gcm에서 사용이 장려되지 않는 classes 사용",
+"Level":"Low",
+"Description":"GCMBaseIntentService, GCMBroadcastReceiver, GCMConstants, GCMRegistrar 클래스는 더 이상 사용이 장려되지 않는다. 대신 GoogleCloudMessaging을 사용하는 것이 권장된다.",
+"Vulncode":"GCMBaseIntentService, GCMBroadcastReceiver, GCMConstants, GCMRegistrar",
+"Secucode":"GoogleCloudMessaging"}

@@ -1,0 +1,6 @@
+{"No":"ORR90",
+"Subject":"setMapTrackballToArrowKeys(boolean setMap)에서 false값 사용",
+"Level":"Low",
+"Description":"앞으로의 버전에서는 setMapTrackballToArrowKeys (boolean setMap)함수에서 default 값인 true만 유효하게 될 예정이다.",
+"Vulncode":"setMapTrackballToArrowKeys(false)",
+"Secucode":"setMapTrackballToArrowKeys(true)//함수를 사용할 필요가 없다."}

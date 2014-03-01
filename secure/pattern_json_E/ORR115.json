@@ -1,0 +1,6 @@
+{"No":"ORR115",
+"Subject":"Division and modulo operations should not result in divide-by-zero errors",
+"Level":"Low",
+"Description":"Ensure that division and modulo operations do not result in divide-by-zero errors.",
+"Vulncode":"long num1, num2, result;\nresult  = num1 / num2;",
+"Secucode":"long num1, num2, result;\nif (num2 == 0) {\n\t//exception handling\n}else{\n\tresult  = num1 / num2;\n}"}

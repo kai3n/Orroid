@@ -1,0 +1,6 @@
+{"No":"ORR66",
+"Subject":"getInsecure 함수 사용",
+"Level":"Low",
+"Description":"getInseure함수를 사용하여 만들어진 소켓은 MITM 공격에 취약하다.",
+"Vulncode":"getInsecure(int, SSLSessionCache)",
+"Secucode":"createSocket(String host, int port), createSocket(String host, int port, InetAddress localAddr, int localPort), createSocket(Socket k, String host, int port, boolean close)"}

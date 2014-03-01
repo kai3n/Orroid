@@ -1,0 +1,6 @@
+{"No":"ORR83",
+"Subject":"canZoomIn(),  canZoomOut(), getScale() 함수 사용",
+"Level":"Low",
+"Description":"canZoomIn 함수와 canZoomOut 함수는 웹 렌더링과 UI 쓰레드 간 레이스 컨디션으로 인해 부정확한 값을 내놓을 수 있다. 대신 onScaleChanged(WebView, float, float)함수를 사용해야 한다.",
+"Vulncode":" canZoomIn(), canZoomOut(), getScale()",
+"Secucode":"onScaleChanged(WebView, float, float)"}

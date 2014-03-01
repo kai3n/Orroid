@@ -1,0 +1,6 @@
+{"No":"ORR89",
+"Subject":"Do not use showFindDialog",
+"Level":"Low",
+"Description":"showFindDialog method does not work reliably on all Android versions; implementing a custom find dialog using WebView.findAllAsync() provides a more robust solution.",
+"Vulncode":"showFindDialog(String text, boolean showIme)",
+"Secucode":"WebView.findAllAsync()"}

@@ -1,0 +1,6 @@
+{"No":"ORR86",
+"Subject":"Do not use savePassword",
+"Level":"Low",
+"Description":"Saving passwords in WebView will not be supported in future versions.",
+"Vulncode":"savePassword(String host, String username, String password), clearUsernamePassword(), hasUsernamePassword()",
+"Secucode":"-"}

@@ -1,0 +1,6 @@
+{"No":"ORR95",
+"Subject":"Do not use constants of Android.util.config class",
+"Level":"Low",
+"Description":"This class is not useful, it just returns the same value for all constants, and has always done this. Do not use it.",
+"Vulncode":"Android.util.config",
+"Secucode":"-"}

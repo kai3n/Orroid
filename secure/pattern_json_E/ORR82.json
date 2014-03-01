@@ -1,0 +1,6 @@
+{"No":"ORR82",
+"Subject":"Private browsing is no longer supported directly via WebView",
+"Level":"Low",
+"Description":" Private browsing is no longer supported directly via WebView and will be removed in a future release. Prefer using WebSettings, WebViewDatabase, CookieManager andWebStorage for fine-grained control of privacy data",
+"Vulncode":" WebView (Context context, AttributeSet attrs, int defStyle, boolean privateBrowsing[ture])",
+"Secucode":"Use WebSettings,  WebViewDatabase, CookieManager, WebStorage"}

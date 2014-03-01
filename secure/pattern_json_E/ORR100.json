@@ -1,0 +1,6 @@
+{"No":"ORR100",
+"Subject":"Do not use Thread.suspend",
+"Level":"Low",
+"Description":"Thread.suspend may cause deadlocks.",
+"Vulncode":"Thread.suspend()",
+"Secucode":"Thread.interrupt()"}

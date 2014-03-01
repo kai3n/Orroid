@@ -1,0 +1,6 @@
+{"No":"ORR64",
+"Subject":"Do not use fill_parent flag",
+"Level":"Low",
+"Description":"It is better to use match_parent instead of fill_parent.",
+"Vulncode":"android:layout_width[height]=\"fill_parent\"",
+"Secucode":"android:layout_width[height]=\"match_parent\""}

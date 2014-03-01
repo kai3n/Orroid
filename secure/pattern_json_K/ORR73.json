@@ -1,0 +1,6 @@
+{"No":"ORR73",
+"Subject":"file scheme url에서 쿠키 사용",
+"Level":"Medium",
+"Description":"setAcceptFileSchemeCookies 함수는 어플리케이션의 WebView 인스턴스가 file scheme url에서 쿠키를 보내고 받을 수 있도록 설정하는 함수이다.",
+"Vulncode":"setAcceptFileSchemeCookies(TRUE);",
+"Secucode":"setAcceptCookie(TRUE); //file scheme url에서 쿠키 사용을 지양한다."}

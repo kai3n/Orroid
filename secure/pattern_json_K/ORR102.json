@@ -1,0 +1,6 @@
+{"No":"ORR102",
+"Subject":"ResourceCursorAdapter 생성자 사용",
+"Level":"Low",
+"Description":"ResourceCursorAdapter(Context context, int layout, Cursor c) 생성자는 잘못된 결과를 가져올 수 있다. 대신 CursorLoader와 LoaderManager를 사용하는 것이 바람직하다.",
+"Vulncode":"ResourceCursorAdapter(Context context, int layout, Cursor c)",
+"Secucode":"LoaderManager와 CursorLoader 사용"}

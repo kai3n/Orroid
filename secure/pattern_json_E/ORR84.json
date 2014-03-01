@@ -1,0 +1,6 @@
+{"No":"ORR84",
+"Subject":"freeMemory()",
+"Level":"Low",
+"Description":"Memory caches are automatically dropped when no longer needed, and in response to system memory pressure.",
+"Vulncode":" freeMemory()",
+"Secucode":"No need to use this function"}

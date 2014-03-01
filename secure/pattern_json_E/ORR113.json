@@ -1,0 +1,6 @@
+{"No":"ORR113",
+"Subject":"Do not use android.provider.Settings.System.AUTO_TIME_ZONE",
+"Level":"Low",
+"Description":"This constant was deprecated in API level 17. Use Global.AUTO_TIME_ZONE instead.",
+"Vulncode":"System.AUTO_TIME_ZONE",
+"Secucode":"Global.AUTO_TIME_ZONE"}

@@ -1,0 +1,6 @@
+{"No":"ORR91",
+"Subject":"Do not use capturePicture()",
+"Level":"Low",
+"Description":"Instead of capturePicture(), use onDraw(Canvas) to obtain a bitmap snapshot of the WebView.",
+"Vulncode":"capturePicture()",
+"Secucode":"onDraw(Canvas)"}

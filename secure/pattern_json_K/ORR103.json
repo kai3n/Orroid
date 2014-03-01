@@ -1,0 +1,6 @@
+{"No":"ORR103",
+"Subject":"android.app.TabActivity클래스 사용",
+"Level":"Low",
+"Description":"이 클래스는 더 이상 사용이 장려되지 않는다 새로운 클래스는 대신 Fragments를 사용해야 한다.",
+"Vulncode":"android.app.TabActivity",
+"Secucode":"Fragments 사용"}

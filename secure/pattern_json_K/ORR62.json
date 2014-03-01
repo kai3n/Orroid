@@ -1,0 +1,6 @@
+{"No":"ORR62",
+"Subject":"외부 저장소에 데이터를 저장한다.",
+"Level":"High",
+"Description":"외부에 저장한 데이터는 다른 사용자나 어플리케이션에 의해 조작될 여지가 있다.",
+"Vulncode":"WRITE_EXTERNAL_STORAGE ",
+"Secucode":"-"}

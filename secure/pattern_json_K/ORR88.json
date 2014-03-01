@@ -1,0 +1,6 @@
+{"No":"ORR88",
+"Subject":"setCertificate 함수 사용",
+"Level":"Low",
+"Description":"이 함수를 호출하는 것은 효과가 없으며, 앞으로 기능이 제거될 예정이다.",
+"Vulncode":"setCertificate(SslCertificate certificate)",
+"Secucode":"-"}

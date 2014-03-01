@@ -1,0 +1,6 @@
+{"No":"ORR87",
+"Subject":"Do not call the super implementation before adding information to the event.",
+"Level":"Low",
+"Description":"Always call the super implementation before adding information to the event, in case the default implementation has basic information to add.",
+"Vulncode":"public void onInitializeAccessibilityEvent(AccessibilityEvent event) {\n\tevent.setPassword(true);\n}",
+"Secucode":"public void onInitializeAccessibilityEvent(AccessibilityEvent event) {\n\tsuper.onInitializeAccessibilityEvent(event);\n\tevent.setPassword(true);\n}"}

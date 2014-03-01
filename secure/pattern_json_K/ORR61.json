@@ -1,0 +1,6 @@
+{"No":"ORR61",
+"Subject":"KeyguardManager.KeyguardLock 사용",
+"Level":"Low",
+"Description":"KeyguardManager.KeyguardLock 대신 FLAG_DISMISS_KEYGUARD 또는 FLAG_SHOW_WHEN_LOCKED을 사용하면 keyguard를 완벽하게 숨길 수 있다.",
+"Vulncode":"KeyguardManager.KeyguardLock",
+"Secucode":"FLAG_DISMISS_KEYGUARD, FLAG_SHOW_WHEN_LOCKED"}

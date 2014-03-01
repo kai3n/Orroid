@@ -1,0 +1,6 @@
+{"No":"ORR78",
+"Subject":"findAll 함수 사용",
+"Level":"Low",
+"Description":"findAll(String find) 함수는 API level 16부터 사용이 장려되지 않는다. 대신 findAllAsync(String) 함수를 사용해야 한다.",
+"Vulncode":"findAll(String)",
+"Secucode":"findAllAsync(String)"}

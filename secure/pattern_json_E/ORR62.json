@@ -1,0 +1,6 @@
+{"No":"ORR62",
+"Subject":"Store sensitive information using external storage.",
+"Level":"High",
+"Description":"External storage can be removed by the user and also modified by any application.",
+"Vulncode":"WRITE_EXTERNAL_STORAGE ",
+"Secucode":"-"}

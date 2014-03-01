@@ -189,6 +189,11 @@ class JPNM
 			node.b = data[:method]
 			node.param = data[:param]
 			@n_list.push node
+		elsif @code.match(JPConst::R_RETURN) != nil
+			data = JPConst::R_RETURN.match(@code)
+			node = ReturnNode.new
+			node.value = data[:value]
+			@n_list.push node
 		elsif @code.match(JPConst::R_OP) != nil
 			data = JPConst::R_OP.match(@code)
 			node = OperationNode.new
@@ -241,11 +246,6 @@ class JPNM
 				node.name = name.ltrim("\s").rtrim("\s")
 				@n_list.push node
 			end
-		elsif @code.match(JPConst::R_RETURN) != nil
-			data = JPConst::R_RETURN.match(@code)
-			node = ReturnNode.new
-			node.value = data[:value]
-			@n_list.push node
 		else
 			node = UnparsedNode.new
 			@n_list.push node

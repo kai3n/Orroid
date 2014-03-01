@@ -1,0 +1,6 @@
+{"No":"ORR111",
+"Subject":"Do not use android.provider.Settings.System.ANIMATOR_DURATION_SCALE",
+"Level":"Low",
+"Description":"This constant was deprecated in API level 17. Use Global.ANIMATOR_DURATION_SCALE instead.",
+"Vulncode":"System.ANIMATOR_DURATION_SCALE",
+"Secucode":"Global.ANIMATOR_DURATION_SCALE"}

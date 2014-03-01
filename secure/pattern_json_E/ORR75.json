@@ -1,0 +1,6 @@
+{"No":"ORR75",
+"Subject":"Do not use ConnectivityManager.EXTRA_NETWORK_INFO",
+"Level":"Low",
+"Description":"Since NetworkInfo can vary based on UID, applications should always obtain network information through getActiveNetworkInfo() orgetAllNetworkInfo().",
+"Vulncode":"ConnectivityManager.EXTRA_NETWORK_INFO",
+"Secucode":"getActiveNetworkInfo(), getAllNetworkInfo()"}

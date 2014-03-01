@@ -1,0 +1,6 @@
+{"No":"ORR94",
+"Subject":"Do not use deprecated functions of com.google.android.gcm",
+"Level":"Low",
+"Description":"GCMBaseIntentService, GCMBroadcastReceiver, GCMConstants, GCMRegistrar classes are deprecated. Instead use GoogleCloudMessaging.",
+"Vulncode":"GCMBaseIntentService, GCMBroadcastReceiver, GCMConstants, GCMRegistrar",
+"Secucode":"GoogleCloudMessaging"}

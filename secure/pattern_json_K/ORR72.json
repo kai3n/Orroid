@@ -1,0 +1,6 @@
+{"No":"ORR72",
+"Subject":"Display 클래스의 비권장 함수 사용",
+"Level":"Low",
+"Description":"Display 클래스의 비권장 함수인 getHeight(), getOrientation(), getPixelFormat(), getWidth()함수를 사용하는 것은 바람직하지 못하다.",
+"Vulncode":"1) getHeight(), 2) getOrientation(), 3) getPixelFormat(), 4) getWidth()",
+"Secucode":"1) getSize(Point), 2) getRotation(), 3) 더 이상 사용할 필요가 없는 함수, 4) getSize(Point)"}

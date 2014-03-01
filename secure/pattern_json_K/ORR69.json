@@ -1,0 +1,6 @@
+{"No":"ORR69",
+"Subject":"SSLSocket 사용 후 hostname이 유효한지 검증하지 않는다. SSLSocket does not perform hostname verification.",
+"Level":"Low",
+"Description":"SSLSocket은 hostname 검증을 수행하지 않는다. 따라서 getDefaultHostnameVerifier() 함수를 사용하는 등의 방법으로 hostname을 검사해야 한다. HostnameVerifier.verify()는 예외를 던지지 않고 논리값을 리턴하므로 이 값을 명시적으로 확인해야 한다.",
+"Vulncode":"SocketFactory sf = SSLSocketFactory.getDefault();\nSSLSocket socket = (SSLSocket) sf.createSocket(\"[host]\", [port]);\n// ... use socket ...\nsocket.close();",
+"Secucode":"SocketFactory sf = SSLSocketFactory.getDefault();\nSSLSocket socket = (SSLSocket) sf.createSocket(\"[host]\", [port]);\nHostnameVerifier hv = HttpsURLConnection.getDefaultHostnameVerifier();\nSSLSession s = socket.getSession();\nif (!hv.verify(\"[host]\", s)) {\n\tthrow new SSLHandshakeException(\"Expected [host], \"\n\t\t\"found \" + s.getPeerPrincipal());\n}\n// ... use socket ...\nsocket.close();"}

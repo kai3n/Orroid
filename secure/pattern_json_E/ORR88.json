@@ -1,0 +1,6 @@
+{"No":"ORR88",
+"Subject":"Do not use setCertificate",
+"Level":"Low",
+"Description":"Calling this function has no useful effect, and will be ignored in future releases.",
+"Vulncode":"setCertificate(SslCertificate certificate)",
+"Secucode":"-"}

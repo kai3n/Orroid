@@ -1,0 +1,6 @@
+{"No":"ORR97",
+"Subject":"Android.app.notification의 생성자로 Notification 사용",
+"Level":"Low",
+"Description":"Android.app.notification의 생성자로 Notification(int icon, CharSequence tickerText, long when)을 사용하는 것보다 Notification.Builder(Context context)를 사용하는 것이 훨씬 바람직하다.",
+"Vulncode":"Notification(int icon, CharSequence tickerText, long when)",
+"Secucode":"Notification.Builder(Context context)"}

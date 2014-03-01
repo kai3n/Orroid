@@ -1,0 +1,6 @@
+{"No":"ORR84",
+"Subject":"freeMemory()",
+"Level":"Low",
+"Description":"freeMemory()함수는 API level 19 이상부터 더이상 사용할 필요가 없다. 메모리가 더 이상 필요가 없거나 시스템 메모리 사용량이 과도할 경우 메모리 캐시가 자동으로 제거되기 때문이다.",
+"Vulncode":" freeMemory()",
+"Secucode":"함수를 사용할 필요가 없다."}

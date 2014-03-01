@@ -1,0 +1,6 @@
+{"No":"ORR81",
+"Subject":"Do not use zoom if either the height or width is set to WRAP_CONTENT",
+"Level":"Low",
+"Description":"Using zoom if either the height or width is set to WRAP_CONTENT may lead to undefined behavior and should be avoided.",
+"Vulncode":"setBuiltInZoomControls(true)",
+"Secucode":"-"}

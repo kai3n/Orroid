@@ -1,0 +1,6 @@
+{"No":"ORR107",
+"Subject":"Do not use android.provider.Settings.System.AIRPLANE_MODE_ON",
+"Level":"Low",
+"Description":"This constant was deprecated in API level 17. Use Global.AIRPLANE_MODE_ON instead.",
+"Vulncode":"System.AIRPLANE_MODE_ON",
+"Secucode":"Global.AIRPLANE_MODE_ON"}

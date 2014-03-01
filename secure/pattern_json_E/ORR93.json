@@ -1,0 +1,6 @@
+{"No":"ORR93",
+"Subject":"Do not use getText(), hasText(), setText(CharSequence text) of ClipboardManager",
+"Level":"Low",
+"Description":"GetText(), hasText(), setText(CharSequence text) of ClipboardManager are deprecated.",
+"Vulncode":"getText(), hasText(), setText()",
+"Secucode":"getPrimaryClip(), hasPrimaryClip(), setPrimaryClip(ClipData)"}

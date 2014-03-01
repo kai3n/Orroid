@@ -1,0 +1,6 @@
+{"No":"ORR102",
+"Subject":"Do not use ResourceCursorAdapter constructor",
+"Level":"Low",
+"Description":"This constructor was deprecated in API level 11. As an alternative, use LoaderManager with a CursorLoader.",
+"Vulncode":"ResourceCursorAdapter(Context context, int layout, Cursor c)",
+"Secucode":"use LoaderManager with a CursorLoader"}

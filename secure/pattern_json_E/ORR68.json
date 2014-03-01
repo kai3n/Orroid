@@ -1,0 +1,6 @@
+{"No":"ORR68",
+"Subject":"Seeding SecureRandom may be insecure",
+"Level":"Low",
+"Description":"Using the seeded constructor or calling setSeed(byte[]) may completely replace the cryptographically strong default seed causing the instance to return a predictable sequence of numbers unfit for secure use.",
+"Vulncode":"1)\nSecureRandom(byte[] seed)\n2)\nsetSeed (byte[] seed)",
+"Secucode":"SecureRandom sr = new SecureRandom();"}

@@ -1,0 +1,6 @@
+{"No":"ORR63",
+"Subject":"Do not use Android.provider.contacts class",
+"Level":"Low",
+"Description":"This class was deprecated in API level 5. The APIs have been superseded by ContactsContract.",
+"Vulncode":"Android.provider.Contacts",
+"Secucode":"Android.provider.ContactsContract "}

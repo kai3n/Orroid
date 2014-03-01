@@ -1,0 +1,6 @@
+{"No":"ORR85",
+"Subject":"onGlobalFocusChanged 함수 사용",
+"Level":"Low",
+"Description":"onGlobalFocusChanged는 API level 3 이후로 아무런 기능도 수행하지 않는다.",
+"Vulncode":"onGlobalFocusChanged (View oldFocus, View newFocus)",
+"Secucode":"-"}

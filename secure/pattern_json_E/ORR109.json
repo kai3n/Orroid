@@ -1,0 +1,6 @@
+{"No":"ORR109",
+"Subject":"Do not use android.provider.Settings.System.ALWAYS_FINISH_ACTIVITIES",
+"Level":"Low",
+"Description":"This constant was deprecated in API level 17. Use Global.ALWAYS_FINISH_ACTIVITIES instead.",
+"Vulncode":"System.ALWAYS_FINISH_ACTIVITIES",
+"Secucode":"Global.ALWAYS_FINISH_ACTIVITIES"}

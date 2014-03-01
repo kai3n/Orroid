@@ -1,0 +1,6 @@
+{"No":"ORR77",
+"Subject":"clearView() 함수 사용",
+"Level":"Low",
+"Description":"clearView() 함수는 API level 18부터 사용이 장려되지 않는다. 대신 WebView.loadUrl(\"about:blank\") 함수를 사용해야 한다.",
+"Vulncode":"clearView()",
+"Secucode":"WebView.loadUrl(\"about:blank\")"}

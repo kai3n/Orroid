@@ -1,0 +1,6 @@
+{"No":"ORR70",
+"Subject":"Do not release the Camera object.",
+"Level":"Low",
+"Description":"Remember to release the Camera object by calling the Camera.release() when your application is done using it.",
+"Vulncode":"Camera.open();\n...",
+"Secucode":"Camera.open();\n...\nCamera.release()"}

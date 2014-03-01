@@ -1,0 +1,6 @@
+{"No":"ORR101",
+"Subject":"Do not use TextToSpeech.OnUtteranceCompletedListener interface",
+"Level":"Low",
+"Description":"This interface was deprecated in API level 18. Use UtteranceProgressListener instead.",
+"Vulncode":"TextToSpeech.OnUtteranceCompletedListener",
+"Secucode":"UtteranceProgressListener"}

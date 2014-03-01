@@ -1,0 +1,6 @@
+{"No":"ORR115",
+"Subject":"나눗셈과 모듈로 연산할 때 0으로 나눌 경우를 대비한다.",
+"Level":"Low",
+"Description":"나눗셈과 모듈로 연산할 때 0으로 나누지 않게 보장해야 한다.",
+"Vulncode":"long num1, num2, result;\nresult  = num1 / num2;",
+"Secucode":"long num1, num2, result;\nif (num2 == 0) {\n\t//예외처리\n}else{\n\tresult  = num1 / num2;\n}"}

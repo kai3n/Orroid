@@ -1,0 +1,6 @@
+{"No":"ORR97",
+"Subject":"Use Notification constructor of Android.app.notification",
+"Level":"Low",
+"Description":"This constructor was deprecated in API level 11. Use Notification.Builder instead.",
+"Vulncode":"Notification(int icon, CharSequence tickerText, long when)",
+"Secucode":"Notification.Builder(Context context)"}

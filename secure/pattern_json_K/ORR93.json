@@ -1,0 +1,6 @@
+{"No":"ORR93",
+"Subject":"ClipboardManager의 getText(), hasText(), setText(CharSequence text) 함수 사용",
+"Level":"Low",
+"Description":"ClipboardManager에서 getText()보다는 getPrimaryClip()를, hasText()보다는 hasPrimaryClip()를, setText(CharSequence text)보다는 setPrimaryClip(ClipData)를 사용하는 것이 훨씬 더 안정적이다.",
+"Vulncode":"getText(), hasText(), setText()",
+"Secucode":"getPrimaryClip(), hasPrimaryClip(), setPrimaryClip(ClipData)"}

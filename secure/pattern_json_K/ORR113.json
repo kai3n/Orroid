@@ -1,0 +1,6 @@
+{"No":"ORR113",
+"Subject":"android.provider.Settings.System.AUTO_TIME_ZONE 사용",
+"Level":"Low",
+"Description":"System.AUTO_TIME_ZONE은 더 이상 사용이 권장되지 않는다. 대신 Global.AUTO_TIME_ZONE 상수를 사용하라.",
+"Vulncode":"System.AUTO_TIME_ZONE",
+"Secucode":"Global.AUTO_TIME_ZONE"}

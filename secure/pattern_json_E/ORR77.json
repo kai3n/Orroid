@@ -1,0 +1,6 @@
+{"No":"ORR77",
+"Subject":"Do not use clearView()",
+"Level":"Low",
+"Description":"ClearView method was deprecated in API level 18. Use WebView.loadUrl(\"about:blank\") instead.",
+"Vulncode":"clearView()",
+"Secucode":"WebView.loadUrl(\"about:blank\")"}

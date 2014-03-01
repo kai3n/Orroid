@@ -1,0 +1,6 @@
+{"No":"ORR92",
+"Subject":"onChildViewAdded, onChildViewRemoved함수 사용",
+"Level":"Low",
+"Description":"이제 onChildViewAdded, onChildViewRemoved 함수는 아무 일도 하지 않는다.",
+"Vulncode":"onChildViewAdded (View parent, View child), onChildViewRemoved (View p, View child)",
+"Secucode":"더 이상 위의 함수를 사용할 필요가 없다."}

@@ -14,11 +14,15 @@ def help
 	puts " |                                                                            |"
 	puts "  +==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+"
 	 
-  
+	puts "\n"
+	puts "\t-p, --project\t\tImport a special library"
+	puts "\t\t\t\t* Usage: orroid [option] [Project folder]"
+	puts "\t			** Output: Project folder with a library"
 	puts "\n"
 	puts "\t-d, --dex\t\tApply an \"Invalid offset\" technique"
 	puts "\t\t\t\t* Usage: orroid [option] [APK file]"
 	puts "\t			** Output: Fixed APK file (You should SIGN it)"
+	puts "\t\t\t\t(Before use this option, \n\t\t\t\tyou should use -p option first)"
 	puts "\n"
 	puts "\t-z, --zipformat		Apply an \"zip format\" techinique"
 	puts "\t			* Usage: orroid [option] [APK file]"

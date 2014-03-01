@@ -1,0 +1,6 @@
+{"No":"ORR67",
+"Subject":"createInsecureRfcommSocketToServiceRecord 함수 사용",
+"Level":"Low",
+"Description":"기밀성이 중요한 경우, createInsecureRfcommSocketToServiceRecord 대신 createRfcommSocketToServiceRecord 함수를 사용한다.",
+"Vulncode":"createInsecureRfcommSocketToServiceRecord(UUID uuid)",
+"Secucode":"createRfcommSocketToServiceRecord(UUID uuid)"}

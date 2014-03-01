@@ -1,0 +1,6 @@
+{"No":"ORR70",
+"Subject":"Camera 사용 완료 후 Camera object를 릴리즈하지 않는다.",
+"Level":"Low",
+"Description":"어플리케이션이 적절히 카메라 오브젝트를 릴리즈하지 않는다면, 그 이후로 카메라에 접근하려는 시도는 실패하여 카메라에 접근을 시도한 어플리케이션이 종료될 수 있다.",
+"Vulncode":"Camera.open();\n...",
+"Secucode":"Camera.open();\n...\nCamera.release()"}

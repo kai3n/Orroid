@@ -1,0 +1,6 @@
+{"No":"ORR81",
+"Subject":"높이 또는 넓이가 WRAP_CONTENT로 설정된 경우에 WebSettings.setBuiltInZoomControls 사용",
+"Level":"Low",
+"Description":"높이 또는 넓이가 WRAP_CONTENT로 설정되어 있는 경우에 Zoom을 사용하는 것은 예상치 못한 결과를 불러올 수 있다. 따라서 이 경우 setBuiltInZoomControls함수를 사용하면 안 된다.",
+"Vulncode":"setBuiltInZoomControls(true)",
+"Secucode":"높이 또는 넓이가 WRAP_CONTENT로 설정되어 있는 경우 이 함수를 사용하지 않는다."}

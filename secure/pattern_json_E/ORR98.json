@@ -1,0 +1,6 @@
+{"No":"ORR98",
+"Subject":"Do not use setLatestEventInfo function of Android.app.notification",
+"Level":"Low",
+"Description":"This method was deprecated in API level 11. Use Notification.Builder instead.",
+"Vulncode":"-",
+"Secucode":"-"}

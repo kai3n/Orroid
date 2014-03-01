@@ -1,0 +1,6 @@
+{"No":"ORR83",
+"Subject":"Do not use canZoomIn(),  canZoomOut(), getScale()",
+"Level":"Low",
+"Description":"These methods are prone to inaccuracy due to race conditions between the web rendering and UI threads; prefer onScaleChanged(WebView, float, float). ",
+"Vulncode":" canZoomIn(), canZoomOut(), getScale()",
+"Secucode":"onScaleChanged(WebView, float, float)"}

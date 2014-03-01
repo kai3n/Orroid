@@ -1,0 +1,6 @@
+{"No":"ORR75",
+"Subject":"ConnectivityManager.EXTRA_NETWORK_INFO 상수 사용",
+"Level":"Low",
+"Description":"NetworkInfo는 UID에 따라 다르므로, 어플리케이션은 EXTRA_NETWORK_INFO가 아니라 반드시 getActiveNetworkInfo() 또는 getAllNetworkInfo() 함수를 통해서 네트워크 정보를 얻어야 한다.",
+"Vulncode":"ConnectivityManager.EXTRA_NETWORK_INFO",
+"Secucode":"getActiveNetworkInfo(), getAllNetworkInfo()"}

@@ -1,0 +1,6 @@
+{"No":"ORR103",
+"Subject":"Do not use android.app.TabActivity",
+"Level":"Low",
+"Description":"This class was deprecated in API level 13. New applications should use Fragments instead of this class.",
+"Vulncode":"android.app.TabActivity",
+"Secucode":"Use fragments"}

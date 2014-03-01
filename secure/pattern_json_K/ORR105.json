@@ -1,0 +1,6 @@
+{"No":"ORR105",
+"Subject":"android.telephony.PhoneStateListener함수의 인자로 정수형을 넣지 않는다. ",
+"Level":"Low",
+"Description":"onSignalStrengthChanged(int asu) 대신 onSignalStrengthsChanged(SignalStrength)를 사용하는 것이 권장된다.",
+"Vulncode":"onSignalStrengthChanged(int asu)",
+"Secucode":"onSignalStrengthsChanged(SignalStrength)"}

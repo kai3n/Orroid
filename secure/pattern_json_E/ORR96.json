@@ -1,0 +1,6 @@
+{"No":"ORR96",
+"Subject":"Do not use FLAG_HIGH_PRIORITY constant of Android.app.notification",
+"Level":"Low",
+"Description":"This constant was deprecated in API level 16. Use priority with a positive value.",
+"Vulncode":"Android.app.notification.FLAG_HIGH_PRIORITY",
+"Secucode":"Use priority"}

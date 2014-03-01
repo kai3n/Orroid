@@ -1,0 +1,6 @@
+{"No":"ORR99",
+"Subject":"Do not use Contacts.Phones class",
+"Level":"Low",
+"Description":"Contacts.Phones class is deprecated. Instead use ContactsContract class.",
+"Vulncode":"Contacts.Phones",
+"Secucode":"ContactsContract"}

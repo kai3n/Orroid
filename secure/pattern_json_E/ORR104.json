@@ -1,0 +1,6 @@
+{"No":"ORR104",
+"Subject":"Do not use android.telephony.PhoneStateListener.LISTEN_SIGNAL_STRENGTH",
+"Level":"Low",
+"Description":"This constant was deprecated in API level 7. Use LISTEN_SIGNAL_STRENGTHS instead.",
+"Vulncode":"LISTEN_SIGNAL_STRENGTH",
+"Secucode":"LISTEN_SIGNAL_STRENGTHS"}

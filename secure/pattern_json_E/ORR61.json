@@ -1,0 +1,6 @@
+{"No":"ORR61",
+"Subject":"Do not Use KeyguardManager.KeyguardLock",
+"Level":"Low",
+"Description":"Use FLAG_DISMISS_KEYGUARD and/or FLAG_SHOW_WHEN_LOCKED instead; this allows you to seamlessly hide the keyguard.",
+"Vulncode":"KeyguardManager.KeyguardLock",
+"Secucode":"FLAG_DISMISS_KEYGUARD, FLAG_SHOW_WHEN_LOCKED"}

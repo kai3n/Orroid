@@ -1,0 +1,6 @@
+{"No":"ORR63",
+"Subject":"Android.provider.contacts 클래스 사용",
+"Level":"Low",
+"Description":"Android.provider.Contacts 클래스의 API들은 이제 더 이상 사용이 장려되지 않는다. Android.provider.ContactsContract 클래스의 API들을 대신 사용하는 것이 바람직하다.",
+"Vulncode":"Android.provider.Contacts",
+"Secucode":"Android.provider.ContactsContract "}

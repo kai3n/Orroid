@@ -1,0 +1,6 @@
+{"No":"ORR104",
+"Subject":"android.telephony.PhoneStateListener.LISTEN_SIGNAL_STRENGTH 상수 사용",
+"Level":"Low",
+"Description":"이 상수는 더이상 사용이 권장되지 않는다. 대신 LISTEN_SIGNAL_STRENGTHS를 사용하라.",
+"Vulncode":"LISTEN_SIGNAL_STRENGTH",
+"Secucode":"LISTEN_SIGNAL_STRENGTHS"}

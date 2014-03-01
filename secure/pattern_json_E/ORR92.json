@@ -1,0 +1,6 @@
+{"No":"ORR92",
+"Subject":"Do not use onChildViewAdded, onChildViewRemoved",
+"Level":"Low",
+"Description":"OnChildViewAdded, onChildViewRemoved methods do nothing now.",
+"Vulncode":"onChildViewAdded (View parent, View child), onChildViewRemoved (View p, View child)",
+"Secucode":"No need to use these functions"}

@@ -1,0 +1,6 @@
+{"No":"ORR87",
+"Subject":"이벤트에 정보를 추가하기 전에 super implementation의 초기화 부재",
+"Level":"Low",
+"Description":"Default implementation이 기본 정보를 가지고 있을 경우를 대비하여, 이벤트에 정보를 추가하기 전에는 super implementation을 불러와야 한다.",
+"Vulncode":"public void onInitializeAccessibilityEvent(AccessibilityEvent event) {\n\tevent.setPassword(true);\n}",
+"Secucode":"public void onInitializeAccessibilityEvent(AccessibilityEvent event) {\n\tsuper.onInitializeAccessibilityEvent(event);\n\tevent.setPassword(true);\n}"}

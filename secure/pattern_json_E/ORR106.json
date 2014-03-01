@@ -1,0 +1,6 @@
+{"No":"ORR106",
+"Subject":"Do not use android.provider.Settings.System.ADB_ENABLED",
+"Level":"Low",
+"Description":"This constant was deprecated in API level 3. Use Global. ADB_ENABLED instead.",
+"Vulncode":"System.ADB_ENABLED",
+"Secucode":"Global.ADB_ENABLED"}

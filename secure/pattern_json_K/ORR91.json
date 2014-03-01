@@ -1,0 +1,6 @@
+{"No":"ORR91",
+"Subject":"capturePicture() 함수 사용",
+"Level":"Low",
+"Description":"현재 상태를 캡처할 경우 capturePicture() 함수를 사용하는 것보다 onDraw(Canvas)를 사용하는 것이 낫다.",
+"Vulncode":"capturePicture()",
+"Secucode":"onDraw(Canvas)"}

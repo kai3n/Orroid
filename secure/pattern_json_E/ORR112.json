@@ -1,0 +1,6 @@
+{"No":"ORR112",
+"Subject":"Do not use android.provider.Settings.System.AUTO_TIME",
+"Level":"Low",
+"Description":"This constant was deprecated in API level 17. Use Global.AUTO_TIME instead.",
+"Vulncode":"System.AUTO_TIME",
+"Secucode":"Global.AUTO_TIME"}

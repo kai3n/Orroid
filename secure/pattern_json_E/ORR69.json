@@ -1,0 +1,6 @@
+{"No":"ORR69",
+"Subject":"SSLSocket does not perform hostname verification.",
+"Level":"Low",
+"Description":" SSLSocket does not perform hostname verification. It is up the your app to do its own hostname verification, preferably by calling getDefaultHostnameVerifier() with the expected hostname.",
+"Vulncode":"SocketFactory sf = SSLSocketFactory.getDefault();\nSSLSocket socket = (SSLSocket) sf.createSocket(\"[host]\", [port]);\n// ... use socket ...\nsocket.close();",
+"Secucode":"SocketFactory sf = SSLSocketFactory.getDefault();\nSSLSocket socket = (SSLSocket) sf.createSocket(\"[host]\", [port]);\nHostnameVerifier hv = HttpsURLConnection.getDefaultHostnameVerifier();\nSSLSession s = socket.getSession();\nif (!hv.verify(\"[host]\", s)) {\n\tthrow new SSLHandshakeException(\"Expected [host], \"\n\t\t\"found \" + s.getPeerPrincipal());\n}\n// ... use socket ...\nsocket.close();"}

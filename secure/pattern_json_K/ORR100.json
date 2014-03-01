@@ -1,0 +1,6 @@
+{"No":"ORR100",
+"Subject":"Thread.suspend 함수 사용",
+"Level":"Low",
+"Description":"Thread.suspend 함수를 사용하면 데드락이 발생할 수 있다.",
+"Vulncode":"Thread.suspend()",
+"Secucode":"Thread.interrupt()"}

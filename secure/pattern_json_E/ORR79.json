@@ -1,0 +1,6 @@
+{"No":"ORR79",
+"Subject":"Do not use PrivilegedAction, PrivilegedExceptionAction",
+"Level":"Medium",
+"Description":"PrivilegedAction, PrivilegedExceptionAction methods are legacy security code; do not use.",
+"Vulncode":"PrivilegedAction, PrivilegedExceptionAction",
+"Secucode":"-"}

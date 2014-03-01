@@ -1,0 +1,6 @@
+{"No":"ORR96",
+"Subject":"Android.app.notification의 FLAG_HIGH_PRIORITY 상수 사용",
+"Level":"Low",
+"Description":"Android.app.notification에서 FLAG_HIGH_PRIORITY 상수를 사용하는 것은 장려되지 않는다. 대신 priority 필드를 사용하는 것이 바람직하다.",
+"Vulncode":"Android.app.notification.FLAG_HIGH_PRIORITY",
+"Secucode":"priority 필드 사용"}

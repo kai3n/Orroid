@@ -1,0 +1,6 @@
+{"No":"ORR65",
+"Subject":"Do not use listenUsingInsecureRfcommWithServiceRecord",
+"Level":"Low",
+"Description":"Use listenUsingRfcommWithServiceRecord(String, UUID), if an encrypted and authenticated communication channel is desired.",
+"Vulncode":"listenUsingInsecureRfcommWithServiceRecord (String name, UUID uuid)",
+"Secucode":"listenUsingRfcommWithServiceRecord(String name, UUID uuid)"}

@@ -1,0 +1,6 @@
+{"No":"ORR99",
+"Subject":"Contacts.Phones 클래스 사용",
+"Level":"Low",
+"Description":"Contacts.Phones 클래스는 더이상 사용이 장려되지 않는다. 대신 ContactsContract 클래스를 사용하는 편이 바람직하다.",
+"Vulncode":"Contacts.Phones",
+"Secucode":"ContactsContract"}

@@ -1,0 +1,6 @@
+{"No":"ORR101",
+"Subject":"TextToSpeech.OnUtteranceCompletedListener 인터페이스 사용",
+"Level":"Low",
+"Description":"TextToSpeech.OnUtteranceCompletedListener 인터페이스는 API level 18부터 사용하지 말 것이 권장된다. 대신 UtteranceProgressListener를 사용하는 것이 바람직하다.",
+"Vulncode":"TextToSpeech.OnUtteranceCompletedListener",
+"Secucode":"UtteranceProgressListener"}

@@ -1,0 +1,6 @@
+{"No":"ORR73",
+"Subject":"Do not use cookies with file scheme URLs.",
+"Level":"Medium",
+"Description":"Sets whether the application's WebView instances should send and accept cookies for file scheme URLs. Use of cookies with file scheme URLs is potentially insecure.",
+"Vulncode":"setAcceptFileSchemeCookies(TRUE);",
+"Secucode":"setAcceptCookie(TRUE);"}

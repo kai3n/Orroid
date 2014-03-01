@@ -1,0 +1,6 @@
+{"No":"ORR64",
+"Subject":"fill_parent 플래그 사용",
+"Level":"Low",
+"Description":"레이아웃 속성 값인 fill_parent 플래그의 명칭은 match_parent로 변경되었다. Fill_parent도 호환성을 위하여 계속 사용가능하지만 되도록이면 match_parent를 사용하는 것이 바람직하다.",
+"Vulncode":"android:layout_width[height]=\"fill_parent\"",
+"Secucode":"android:layout_width[height]=\"match_parent\""}

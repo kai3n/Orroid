@@ -1,0 +1,6 @@
+{"No":"ORR90",
+"Subject":"Do not use setMapTrackballToArrowKeys(false)",
+"Level":"Low",
+"Description":"Only the default case, true, will be supported in a future version.",
+"Vulncode":"setMapTrackballToArrowKeys(false)",
+"Secucode":"setMapTrackballToArrowKeys(true)//No need to use this function."}

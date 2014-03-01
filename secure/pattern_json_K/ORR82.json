@@ -1,0 +1,6 @@
+{"No":"ORR82",
+"Subject":"WebView에서 직접 private browsing 기능 제공",
+"Level":"Low",
+"Description":"WebView를 이용하여 private browsing을 하는 기능은 앞으로 제거될 예정이다. private browsing을 위해서는 WebSettings,  WebViewDatabase, CookieManager, WebStorage를 사용하는 것이 좋다.",
+"Vulncode":" WebView (Context context, AttributeSet attrs, int defStyle, boolean privateBrowsing[ture])",
+"Secucode":"WebSettings,  WebViewDatabase, CookieManager, WebStorage를 이용하여 private browsing 구현"}

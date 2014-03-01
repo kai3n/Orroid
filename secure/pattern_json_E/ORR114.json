@@ -1,0 +1,6 @@
+{"No":"ORR114",
+"Subject":"Do not use android.provider.Settings.System.BLUETOOTH_ON",
+"Level":"Low",
+"Description":"This constant was deprecated in API level 3. Use Global.BLUETOOTH_ON instead.",
+"Vulncode":"System.BLUETOOTH_ON",
+"Secucode":"Global.BLUETOOTH_ON"}

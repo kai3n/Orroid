@@ -1,0 +1,6 @@
+{"No":"ORR85",
+"Subject":"Do not use onGlobalFocusChanged",
+"Level":"Low",
+"Description":"onGlobalFocusChanged method was deprecated in API level 3. This method does nothing now.",
+"Vulncode":"onGlobalFocusChanged (View oldFocus, View newFocus)",
+"Secucode":"-"}

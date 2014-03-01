@@ -1,0 +1,6 @@
+{"No":"ORR65",
+"Subject":"listenUsingInsecureRfcommWithServiceRecord 함수 사용",
+"Level":"Low",
+"Description":"기밀성이 중요한 경우, listenUsingInsecureRfcommWithServiceRecord 대신 listenUsingRfcommWithServiceRecord 함수를 사용한다.",
+"Vulncode":"listenUsingInsecureRfcommWithServiceRecord (String name, UUID uuid)",
+"Secucode":"listenUsingRfcommWithServiceRecord(String name, UUID uuid)"}

@@ -1,0 +1,6 @@
+{"No":"ORR109",
+"Subject":"android.provider.Settings.System.ALWAYS_FINISH_ACTIVITIES 사용",
+"Level":"Low",
+"Description":"System.ALWAYS_FINISH_ACTIVITIES은 더 이상 사용이 권장되지 않는다. 대신 Global.ALWAYS_FINISH_ACTIVITIES 상수를 사용하라.",
+"Vulncode":"System.ALWAYS_FINISH_ACTIVITIES",
+"Secucode":"Global.ALWAYS_FINISH_ACTIVITIES"}

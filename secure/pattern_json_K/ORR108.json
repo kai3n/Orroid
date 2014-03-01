@@ -1,0 +1,6 @@
+{"No":"ORR108",
+"Subject":"android.provider.Settings.System.AIRPLANE_MODE_RADIOS 사용",
+"Level":"Low",
+"Description":"System.AIRPLANE_MODE_RADIOS은 더 이상 사용이 권장되지 않는다. 대신 Global.AIRPLANE_MODE_RADIOS 상수를 사용하라.",
+"Vulncode":"System.AIRPLANE_MODE_RADIOS",
+"Secucode":"Global.AIRPLANE_MODE_RADIOS"}

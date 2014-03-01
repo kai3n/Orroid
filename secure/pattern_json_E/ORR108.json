@@ -1,0 +1,6 @@
+{"No":"ORR108",
+"Subject":"Do not use android.provider.Settings.System.AIRPLANE_MODE_RADIOS",
+"Level":"Low",
+"Description":"This constant was deprecated in API level 17. Use Global.AIRPLANE_MODE_RADIOS instead.",
+"Vulncode":"System.AIRPLANE_MODE_RADIOS",
+"Secucode":"Global.AIRPLANE_MODE_RADIOS"}
