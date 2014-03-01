@@ -96,19 +96,25 @@ def do_check(parser)
 end
 
 def sec_cod_run
-	p $path
+	#p $path
 
 	code_list = Array.new
 
-	Find.find($path) do |path|
-		if File.directory?(path)
-			if File.exist?(path+"/src") and File.exist?(path+"/AndroidManifest.xml")
-				code_list += make_list(path+"/src", /.*\.java$/)
-				$manifest = load_xml(path+"/AndroidManifest.xml")
-			else
-				next
+	begin
+		Find.find($path) do |path|
+			if File.directory?(path)
+				if File.exist?(path+"/src") and File.exist?(path+"/AndroidManifest.xml")
+					code_list += make_list(path+"/src", /.*\.java$/)
+					$manifest = load_xml(path+"/AndroidManifest.xml")
+				else
+					next
+				end
 			end
+
 		end
+	rescue
+		puts "No project folder"
+		exit
 	end
 
 	$java_pattern = make_list("secure/pattern", /.*\.rb$/)
