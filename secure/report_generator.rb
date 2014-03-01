@@ -11,7 +11,7 @@ def make_report( report_array )
 	bodyHash = Hash.new
 
 	report_array.each do |report|
-		if $language == "E"
+		if $flag == "E"
 			fd = open("secure/pattern_json_E/" + report.idx + ".json","r:utf-8")
 		else
 			fd = open("secure/pattern_json_K/" + report.idx + ".json","r:utf-8")
