@@ -31,7 +31,7 @@ SUPPORT
 -------
 Send any bug reports to the below e-mail.
 
- nedin12@naver.com
+ diadld2@naver.com or kaienmg@gmail.com
 
 I hope this tool can help your practically.
  
