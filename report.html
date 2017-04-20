@@ -1,0 +1,2154 @@
+
+		<html xmlns='http://www.w3.org/1999/xhtml'>
+
+	
+
+		<head>
+			<meta http-equiv='Content-Type' content='text/html; charset=utf-8'></meta>
+			<title>ORROID REPORT</title>
+
+			<link href='js/shCoreDefault.css' rel='stylesheet' type='text/css' />
+			<script src='js/shCore.js' type='text/javascript'></script>
+			<script src='js/shBrushJava.js' type='text/javascript'></script>
+			<script src='js/shAutoloader.js' type='text/javascript'></script>
+			
+			<script type='text/javascript'>SyntaxHighlighter.all();</script>
+
+			<!-- <div align = 'center'><font size = '60'><B>Orroid Report</B></font></div> -->
+
+		<!-- write-->
+		<style type='text/css' media='all'>
+		/* CSS Document */
+			UL.ulist {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px;};
+			LI.list  {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc;}
+			LI.list0 {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc; color:#65ae5e;}
+			LI.list1 {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc; color:#4a7fcb;}
+			LI.list2 {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc; color:#e3801c;}
+			LI.list3 {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc; color:#c51010;}
+			LI.list4 {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc; color:#ab20d8;}
+
+		/* zero out */
+				html {
+						margin:0;
+						padding:0;
+						}
+
+		/* basic formatting */
+				body {
+						margin:0;
+						padding:0;
+						color: #69737b;
+						font-family:10px/12px Arial,Helvetica,sans-serif;
+						border-top: #000 solid 1px;
+						}
+						
+				/* container formatting */              
+				#container {
+						position: relative;
+						}
+						
+				.container_16 {
+						margin-left:auto;
+						margin-right:auto;
+						width:960px;
+						}
+			
+				/* main content of page */
+				#reportContent {
+						background: #FFF;
+						width:920px;
+						height:auto;
+						margin:10px auto;
+						padding: 0 10px 10px 10px;
+						box-shadow: inset #d8d8d8;
+						}
+						
+				.classheader h1 {
+								color:#ffffff;
+								font:bold 15px Arial,Helvetica,sans-serif;
+								padding: 0 10px;
+								text-align: center;
+								line-height:25px;
+								}
+								
+				.classtitle h1 {
+								color:#ffffff;
+								font:bold 30px Arial,Helvetica,sans-serif;
+								padding: 0 10px;
+								line-height:25px;
+								}
+								
+				.classtitle h2 {
+								color:#ffffff;
+								font:bold 20px Arial,Helvetica,sans-serif;
+								padding: 0 10px;
+								line-height:25px;
+								}
+								
+				.classtitle h3 {
+								color:#ffffff;
+								font:16px Arial,Helvetica,sans-serif;
+								padding: 0 10px;
+								line-height:25px;
+								}
+								
+				.classchapter h1 {
+								background:#053958;
+								color:#ffffff;
+								font:bold 20px Arial,Helvetica,sans-serif;
+								padding: 0 10px;
+								line-height:25px;
+								margin-top:2cm;
+								font:bold 100px;
+								}
+								
+				.classsection h2 {
+								background:#053958;
+								color:#ffffff;
+								font:bold 13px/14px Arial,Helvetica,sans-serif;
+								padding: 0 10px;
+								line-height:25px;
+								margin-bottom:0px;
+								margin-top:30px;
+							  }
+
+				.classsection_sub tr, td {
+								color:#053958;
+								font:normal 13px/14px Arial,Helvetica,sans-serif;
+								padding: 0 0px;
+								line-height:25px;
+								margin-bottom:0px;
+							  }
+
+				.classsection0 h2 {
+								background:#053958;
+								color:#FFFFFF;
+								font:bold 13px/14px Arial,Helvetica,sans-serif;
+								padding: 0 10px;
+								line-height:25px;
+								margin-bottom:0px;
+								margin-top:2px;
+
+								background-color: #65ae5e;
+								background-image: -webkit-linear-gradient(left, #65ae5e, #acd3b1);
+								background-image:    -moz-linear-gradient(left, #65ae5e, #acd3b1);
+								background-image:     -ms-linear-gradient(left, #65ae5e, #acd3b1);
+								background-image:      -o-linear-gradient(left, #65ae5e, #acd3b1);
+								background-image:         linear-gradient(left, #65ae5e, #acd3b1);
+							  }
+
+				.classsection1 h2 {
+								background:#053958;
+								color:#FFFFFF;
+								font:bold 13px/14px Arial,Helvetica,sans-serif;
+								padding: 0 10px;
+								line-height:25px;
+								margin-bottom:0px;
+								margin-top:2px;
+								background-color: #4a7fcb;
+								background-image: -webkit-linear-gradient(left, #4a7fcb, #9ab5dd);
+								background-image:    -moz-linear-gradient(left, #4a7fcb, #9ab5dd);
+								background-image:     -ms-linear-gradient(left, #4a7fcb, #9ab5dd);
+								background-image:      -o-linear-gradient(left, #4a7fcb, #9ab5dd);
+								background-image:         linear-gradient(left, #4a7fcb, #9ab5dd);
+							  }
+
+				.classsection2 h2 {
+								background:#053958;
+								color:#FFFFFF;
+								font:bold 13px/14px Arial,Helvetica,sans-serif;
+								padding: 0 10px;
+								line-height:25px;
+								margin-bottom:0px;
+								margin-top:2px;
+								background-color: #e3801c;
+								background-image: -webkit-linear-gradient(left, #e3801c, #e9c29d);
+								background-image:    -moz-linear-gradient(left, #e3801c, #e9c29d);
+								background-image:     -ms-linear-gradient(left, #e3801c, #e9c29d);
+								background-image:      -o-linear-gradient(left, #e3801c, #e9c29d);
+								background-image:         linear-gradient(left, #e3801c, #e9c29d);
+							  }
+
+				.classsection3 h2 {
+								background:#053958;
+								color:#FFFFFF;
+								font:bold 13px/14px Arial,Helvetica,sans-serif;
+								padding: 0 10px;
+								line-height:25px;
+								margin-bottom:0px;
+								margin-top:2px;
+								background-color: #c51010;
+								background-image: -webkit-linear-gradient(left, #c51010, #d58185);
+								background-image:    -moz-linear-gradient(left, #c51010, #d58185);
+								background-image:     -ms-linear-gradient(left, #c51010, #d58185);
+								background-image:      -o-linear-gradient(left, #c51010, #d58185);
+								background-image:         linear-gradient(left, #c51010, #d58185);
+							  }
+
+				.classsection4 h2 {
+								background:#053958;
+								color:#FFFFFF;
+								font:bold 13px/14px Arial,Helvetica,sans-serif;
+								padding: 0 10px;
+								line-height:25px;
+								margin-bottom:0px;
+								margin-top:2px;
+								background-color: #ab20d8;
+								background-image: -webkit-linear-gradient(left, #ab20d8, #cd90ec);
+								background-image:    -moz-linear-gradient(left, #ab20d8, #cd90ec);
+								background-image:     -ms-linear-gradient(left, #ab20d8, #cd90ec);
+								background-image:      -o-linear-gradient(left, #ab20d8, #cd90ec);
+								background-image:         linear-gradient(left, #ab20d8, #cd90ec);
+							  }			
+
+				.classcell0 {
+								background-color: #65ae5e;
+								background-image: -webkit-linear-gradient(left, #65ae5e, #acd3b1);
+								background-image:    -moz-linear-gradient(left, #65ae5e, #acd3b1);
+								background-image:     -ms-linear-gradient(left, #65ae5e, #acd3b1);
+								background-image:      -o-linear-gradient(left, #65ae5e, #acd3b1);
+								background-image:         linear-gradient(left, #65ae5e, #acd3b1);
+							  }
+
+				.classcell1 {
+								background-color: #4a7fcb;
+								background-image: -webkit-linear-gradient(left, #4a7fcb, #9ab5dd);
+								background-image:    -moz-linear-gradient(left, #4a7fcb, #9ab5dd);
+								background-image:     -ms-linear-gradient(left, #4a7fcb, #9ab5dd);
+								background-image:      -o-linear-gradient(left, #4a7fcb, #9ab5dd);
+								background-image:         linear-gradient(left, #4a7fcb, #9ab5dd);
+							  }
+
+				.classcell2 {
+								background-color: #e3801c;
+								background-image: -webkit-linear-gradient(left, #e3801c, #e9c29d);
+								background-image:    -moz-linear-gradient(left, #e3801c, #e9c29d);
+								background-image:     -ms-linear-gradient(left, #e3801c, #e9c29d);
+								background-image:      -o-linear-gradient(left, #e3801c, #e9c29d);
+								background-image:         linear-gradient(left, #e3801c, #e9c29d);
+							  }
+
+				.classcell3 {
+								background-color: #c51010;
+								background-image: -webkit-linear-gradient(left, #c51010, #d58185);
+								background-image:    -moz-linear-gradient(left, #c51010, #d58185);
+								background-image:     -ms-linear-gradient(left, #c51010, #d58185);
+								background-image:      -o-linear-gradient(left, #c51010, #d58185);
+								background-image:         linear-gradient(left, #c51010, #d58185);
+							  }
+
+				.classcell4 {
+								background-color: #ab20d8;
+								background-image: -webkit-linear-gradient(left, #ab20d8, #cd90ec);
+								background-image:    -moz-linear-gradient(left, #ab20d8, #cd90ec);
+								background-image:     -ms-linear-gradient(left, #ab20d8, #cd90ec);
+								background-image:      -o-linear-gradient(left, #ab20d8, #cd90ec);
+								background-image:         linear-gradient(left, #ab20d8, #cd90ec);
+							  }			
+
+				.classcell {
+							  }			
+
+				.classsubsection h2 {
+								background:#9ab3cc;
+								color:#FFFFFF;
+								font:bold 13px/14px Arial,Helvetica,sans-serif;
+								padding: 0 10px;
+								line-height:25px;
+								margin-top:0px;
+								margin-bottom:0px;
+								}
+								
+				.classh1 h2 {
+								background:#eef2f3;
+								color:#053958;
+								font:bold 13px/14px Arial,Helvetica,sans-serif;
+								padding: 0 10px;
+								line-height:25px;
+								margin-top:0px;
+								margin-bottom:0px;
+								}
+								
+				.classh1_grey h2 {
+								background:#eaeaea;
+								color:#053958;
+								font:normal 13px/14px Arial,Helvetica,sans-serif;
+								padding: 0 10px;
+								line-height:25px;
+								margin-top:0px;
+								margin-bottom:2px;
+								}
+								
+				.classh2 h2 {
+								background:#f8f8f8;
+								font:bold 13px/14px Arial,Helvetica,sans-serif;
+								padding: 0 10px;
+								line-height:25px;
+								margin-top:0px;
+								margin-bottom:0px;
+								}
+				.classtext {
+								font:13px/14px Arial,Helvetica,sans-serif;
+								padding: 0 10px;
+								text-align: left;
+								}	
+								
+				.classpre {
+								font:12px/14px Courier New, Courier, monospace;
+								padding: 0 10px;
+								color:black;
+								text-align: left;
+								}	
+								
+				.classtoc {
+								font:18px Arial,Helvetica,sans-serif;
+								padding: 0 0px;
+								line-height:25px;
+								}
+								
+				.classtoc1 a {
+								color='#053958';
+								font:16px/18px Arial,Helvetica,sans-serif;
+								padding: 0 0px;
+								text-align: left;
+								}	
+								
+				.classtoc2 a {
+								font:13px/14px Arial,Helvetica,sans-serif;
+								padding: 0 20px;
+								text-align: left;
+								color='#69737b'
+								}						
+			
+				</style>
+		<!-- finish to write -->
+
+		<script type='text/javascript'>
+			function toggle(divId)
+			{
+				var divObj = document.getElementById(divId);
+
+				if (divObj)
+				{
+					var displayType = divObj.style.display;
+					if (displayType == '' || displayType == 'block')
+					{
+						divObj.style.display = 'none';
+					}
+					else
+					{
+						divObj.style.display = 'block';
+					}
+				}
+			}
+		</script>
+		</head>
+
+		<div id = 'reportContent'>
+			<span xmlns='' class='classchapter'><h1 id='idm331888'>Orroid Report</h1></span>
+			<br><br><br><br><br><br><br>
+
+			<div align = right><script>document.write( Date() );</script></div><br>
+
+			<body>
+				<div>
+					<table border = '0' width = 100% align = center cellspacing = 0>
+						<tr>
+							<td colspan = '4' class = 'classh1'><h2>Summary</h2></td>
+						</tr>
+						<tr>
+							<td class = 'classcell4' width = 25% cellpadding = 10>&nbsp;&nbsp;&nbsp;High</td>
+							<td class = 'classcell2' width = 25%>&nbsp;&nbsp;&nbsp;Medium</td>
+							<td class = 'classcell1' width = 25%>&nbsp;&nbsp;&nbsp;Low</td>
+							<td class = 'classcell0' width = 25%>&nbsp;&nbsp;&nbsp;Total</td>
+						</tr>
+						<tr>
+							<td>&nbsp;&nbsp;&nbsp;0</td>
+							<td>&nbsp;&nbsp;&nbsp;122</td>
+							<td>&nbsp;&nbsp;&nbsp;0</td>
+							<td>&nbsp;&nbsp;&nbsp;122</td>
+						</tr>
+					</table>
+				</div>
+
+			<br><br><br><br>
+
+				<div>
+					<!-- subject -->
+					<table border = '0' width = 100% align = center cellspacing = 0>
+						<tr>
+							<td colspan = '4' class = 'lassh1'><h2>Detail Information</h2></td>
+						</tr>
+						<tr class='classsubsection'>
+							<td width = 10%><h2>No</h2></td>
+							<td width = 80%><h2>Subject</h2></td>
+							<td width = 10%><h2>Level</h2></td>
+						<tr>
+					</table>
+		
+		<!-- 1 basic-->
+					<table border = 0 width = 100% align = center cellspacing = 0>
+						<tr onClick = "toggle('ORR19')" onMouseover="this.style.cursor='pointer'" class = classsection2>
+							<td width = 10%><h2>ORR19<!-- json.No--></h2></td>
+							<td width = 80%><h2>데이터 멤버는 private로 선언하고 접근 method를 따로 제공한다.<!-- json.Subject--></h2></td>
+							<td width = 10%><h2>Medium<!-- json.Level--></h2></td>
+						</tr>
+					</table>
+					<!-- 1 basic finish-->
+
+					<!-- 1 detail-->
+					<div id='ORR19' style='display: none;'>
+						<table border = 0 width = 100% align = center cellspacing = 0>
+							<tr>
+								<td class = 'classh1' width = 100% colspan = 2><font color='#053958' style='font-weight: bold'><h2>Description</h2></font></td>
+							</tr>
+
+							<tr>
+								<td width = 100% style='border-bottom:2px solid green;' colspan = 2>데이터 멤버를 private로 선언하지 않으면 객체 지향 프로그래밍의 캡슐화가 사라진다. 결과적으로 외부에서 해당 데이터를 제어할 수 있게 된다.<!-- json.Description--></td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>16</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public  int mNum;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>19</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mX;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>20</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mY;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>22</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mMyPlainX;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>23</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mMyPlainY;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>24</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mEnemyX;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>25</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mEnemyY;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>26</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mBaseValue;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>33</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public boolean mGoCls = false;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>35</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public boolean mFireCls = true;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>37</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mGabX= 0;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>38</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mGabY =0;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>40</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public boolean mActive = false;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>41</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public ScreenConfig mScreenConfig;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>42</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mSpeed = 5;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>44</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mType = 1;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public  int mNum;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mX;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mY;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>11</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mWidth;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>12</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mHeight;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>14</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public boolean mAlive = false;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>15</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public boolean mActive = false;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>16</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public boolean mFireCls = true;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mDegree = 180;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>19</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mSpeed=1;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>22</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mGabX= 0;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>23</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mGabY =0;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>25</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public ScreenConfig mScreenConfig;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>27</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mTimeLine = 0;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>29</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mType =1;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>32</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mStartLine = 0;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>33</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mStartX;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>34</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mStartY;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>35</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mObjectKind;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>36</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mEnergy = 10;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>37</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mBfDegree = 0;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>EnemyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>149</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public static int mTempBfDegree = 1000;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Explosion</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>17</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mX;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Explosion</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mY;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Extra</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public  int mNum;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Extra</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mX;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Extra</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mY;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Extra</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>13</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public boolean mGoCls = false;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Extra</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>14</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mGabX= 0;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Extra</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>15</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mGabY =0;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Extra</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>16</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public ScreenConfig mScreenConfig;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Extra</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>17</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mSpeed = 20;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>GameActivity</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>42</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public AdView adView;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>GameButton</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>16</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public  int mNum;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>GameButton</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>20</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mX;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>GameButton</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>21</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mY;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MainView</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>45</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public boolean mDrawCls = false;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MenuPanel</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>8</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public  int mNum;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MenuPanel</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public  boolean mNewMode = true;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MenuPanel</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>12</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mX;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MenuPanel</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>13</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mY;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>8</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public  int mType;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>11</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mX;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>12</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mY;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>15</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mSpeed = 20;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>16</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mEnergy = 10;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>17</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mTimeLine = 0;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public boolean mActive = false;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>19</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public ScreenConfig mScreenConfig;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public  int mNum;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>13</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mX;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>14</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mY;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>15</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mGabX = 0;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>16</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double mGabY = 0;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>17</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double[] mXOld = new double[20];</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public double[] mYOld = new double[20];</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>21</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public boolean mGoCls = false;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>22</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public boolean mActive = true;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>23</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mDirectionMode = 1;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>24</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mTimeLine = 0;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>25</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mControlMode;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>26</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public ScreenConfig mScreenConfig;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>60</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int m_degree = 0;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Schedular</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mFinalStep = 10; public int mStep=0;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Schedular</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public String mLevelName = "";</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Schedular</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>8</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mLevel;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Schedular</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public final int mArraySize = 50;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Schedular</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int[] mIdArray= new int[mArraySize];</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Schedular</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>11</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int[] mTimeArray= new int[mArraySize];</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Schedular</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>12</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int[] mStartXArray= new int[mArraySize];</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Schedular</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>13</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int[] mStartYArray= new int[mArraySize];</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Schedular</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>14</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int[] mObjectKindArray= new int[mArraySize];</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Schedular</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>15</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int[] mTypeArray= new int[mArraySize];</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Schedular</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mFireSize=300;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Schedular</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>19</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int[] mFireUnitArray= new int[mFireSize];</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Schedular</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>20</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int[] mFireTimeArray = new int [mFireSize];</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Schedular</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>21</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int[] mFireTypeArray = new int [mFireSize];</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>ScorePanel</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public  int mNum;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>ScorePanel</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>11</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public  boolean mNewMode = true;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>ScorePanel</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>14</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mX;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>ScorePanel</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>15</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public int mY;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>ScorePanel</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>21</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public long[] mScore;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>ScreenConfig</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public static  int SCREEN_WIDTH;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>ScreenConfig</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public static  int SCREEN_HEIGHT;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>ScreenConfig</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>8</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public static  int VIRTUAL_WIDTH;</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>ScreenConfig</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>public static  int VIRTUAL_HEIGHT;</td>
+							</tr>
+		
+							<tr>
+								<td><font color='#c51010' style='font-weight: bold'>ex) Vuln code</font></td>
+							</tr>
+							<tr>
+								<td colspan = 2>
+								<pre class='brush: java;'>public class [class]{
+	public [var];
+	[method 1] ([param1]){
+		[var] =  ...;
+	}
+	...
+}</pre>
+								</td>
+							</tr>
+							<tr>
+								<td><font color='#65ae5e' style='font-weight: bold'>ex) Secure code</font></td>
+							</tr>
+							<tr>
+								<td colspan = 2>
+									<pre class='brush: java;'>public class [class]{
+	private [var];
+	[method 1] (){
+		return [var];
+		...
+}
+}</pre>
+								</td>
+							</tr>
+						</table>
+					</div>
+		
+		<!-- 1 basic-->
+					<table border = 0 width = 100% align = center cellspacing = 0>
+						<tr onClick = "toggle('ORR40')" onMouseover="this.style.cursor='pointer'" class = classsection2>
+							<td width = 10%><h2>ORR40<!-- json.No--></h2></td>
+							<td width = 80%><h2>오류상황에 대한 처리 부재<!-- json.Subject--></h2></td>
+							<td width = 10%><h2>Medium<!-- json.Level--></h2></td>
+						</tr>
+					</table>
+					<!-- 1 basic finish-->
+
+					<!-- 1 detail-->
+					<div id='ORR40' style='display: none;'>
+						<table border = 0 width = 100% align = center cellspacing = 0>
+							<tr>
+								<td class = 'classh1' width = 100% colspan = 2><font color='#053958' style='font-weight: bold'><h2>Description</h2></font></td>
+							</tr>
+
+							<tr>
+								<td width = 100% style='border-bottom:2px solid green;' colspan = 2>오류를 포착하고도 해당 오류에 대해서 아무런 조치도 취하지 않으면 의도치 않은 결과가 초래된다.<!-- json.Description--></td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Explosion</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>56</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>catch(Exception exIO)</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>Extra</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>43</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>catch(Exception ex)</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>GameActivity</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>70</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>catch(Exception exAsset)</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>GameActivity</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>204</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''> catch(Exception fileex) </td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>GameActivity</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>291</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''> catch(Exception exFile)</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>GameButton</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>206</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>catch(Exception exTemp)</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>GameButton</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>266</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>catch(Exception exTemp)</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MainView</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>912</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>catch(Exception e)</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MainView</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>913</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>catch(Exception e)</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MenuPanel</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>34</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>catch(Exception ex)</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyFire</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>45</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>catch(Exception ex)</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>MyPlane</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>44</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>catch(Exception ex)</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>ScorePanel</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>38</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>catch(Exception ex)</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>ScorePanel</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>72</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>catch(Exception ex)</td>
+							</tr>
+		
+							<tr>
+								<td><font color='#c51010' style='font-weight: bold'>ex) Vuln code</font></td>
+							</tr>
+							<tr>
+								<td colspan = 2>
+								<pre class='brush: java;'>public [method](String [param1], String [param2], String [param3]) {
+	try{
+		...
+	} catch (SQLException [exception]) {
+	} catch (NamingException [exception]) {
+	}
+	...
+}</pre>
+								</td>
+							</tr>
+							<tr>
+								<td><font color='#65ae5e' style='font-weight: bold'>ex) Secure code</font></td>
+							</tr>
+							<tr>
+								<td colspan = 2>
+									<pre class='brush: java;'>public [method](String [param1], String [param2], String [param3]) {
+	try{
+		...
+	} catch (SQLException [exception]) {
+	if([var] != null){
+ ...
+	}
+} catch (NamingException [exception]) {
+	if([var] != null){
+ ...
+	}
+}
+	...
+}</pre>
+								</td>
+							</tr>
+						</table>
+					</div>
+		
+		<!-- 1 basic-->
+					<table border = 0 width = 100% align = center cellspacing = 0>
+						<tr onClick = "toggle('ORR36')" onMouseover="this.style.cursor='pointer'" class = classsection2>
+							<td width = 10%><h2>ORR36<!-- json.No--></h2></td>
+							<td width = 80%><h2>전역적으로 접근 가능한 파일<!-- json.Subject--></h2></td>
+							<td width = 10%><h2>Medium<!-- json.Level--></h2></td>
+						</tr>
+					</table>
+					<!-- 1 basic finish-->
+
+					<!-- 1 detail-->
+					<div id='ORR36' style='display: none;'>
+						<table border = 0 width = 100% align = center cellspacing = 0>
+							<tr>
+								<td class = 'classh1' width = 100% colspan = 2><font color='#053958' style='font-weight: bold'><h2>Description</h2></font></td>
+							</tr>
+
+							<tr>
+								<td width = 100% style='border-bottom:2px solid green;' colspan = 2>파일 생성 시 MODE_WORLD_READABLE이나 MODE_WORLD_WRITABLE을 인자로 주면 다른 응용프로그램에서 접근할 수 있게 된다.<!-- json.Description--></td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>GameActivity</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>163</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>fos= openFileOutput(strFileName , MODE_WORLD_READABLE|MODE_WORLD_WRITEABLE);</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>GameActivity</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>226</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>fos= openFileOutput(strFileName , MODE_WORLD_READABLE|MODE_WORLD_WRITEABLE);</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>GameActivity</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>288</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>fos= openFileOutput(strFileName , MODE_WORLD_READABLE|MODE_WORLD_WRITEABLE);</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>GameActivity</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>311</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>fos= openFileOutput(strFileName , MODE_WORLD_READABLE|MODE_WORLD_WRITEABLE);</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>GameActivity</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>351</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>fos= openFileOutput(strFileName , MODE_WORLD_READABLE|MODE_WORLD_WRITEABLE);</td>
+							</tr>
+		
+							<tr>
+								<td width = 30%><font color='#053958' style='font-weight: bold'>Vuln Class</font></td>
+								<td width = 70%>GameActivity</td>
+							</tr>
+							<tr>
+								<td><font color='#053958' style='font-weight: bold'>Vuln Line</font></td>
+								<td>357</td>
+							</tr>
+							<tr>
+								<td style='border-bottom:2px solid pink;'><font color='#053958' style='font-weight: bold; '>Vuln Code</font></td>
+								<td style='border-bottom:2px solid pink;''>fos= openFileOutput(strFileName , MODE_WORLD_READABLE|MODE_WORLD_WRITEABLE);</td>
+							</tr>
+		
+							<tr>
+								<td><font color='#c51010' style='font-weight: bold'>ex) Vuln code</font></td>
+							</tr>
+							<tr>
+								<td colspan = 2>
+								<pre class='brush: java;'>public void onCreate(Bundle savedInstanceState) {
+	super.onCreate(savedInstanceState);
+	try {
+		FileOutputStream [var1] = openFileOutput("[filename]", MODE_WORLD_READABLE);
+		OutputStreamWriter [var2] = new OutputStreamWriter([var1]);
+		[var2].write("[string]");
+		[var2].close();
+		[var1].close();
+	} catch (Throwable [t]){
+		...
+	}
+}</pre>
+								</td>
+							</tr>
+							<tr>
+								<td><font color='#65ae5e' style='font-weight: bold'>ex) Secure code</font></td>
+							</tr>
+							<tr>
+								<td colspan = 2>
+									<pre class='brush: java;'>public void onCreate(Bundle savedInstanceState) {
+	super.onCreate(savedInstanceState);
+	try {
+		FileOutputStream [var1] = openFileOutput("[filename]", MODE_PRIVATE);
+		OutputStreamWriter [var2] = new OutputStreamWriter([var1]);
+		[var2].write("[string]");
+		[var2].close();
+		[var1].close();
+	} catch (Throwable [t]){
+		...
+	}
+}</pre>
+								</td>
+							</tr>
+						</table>
+					</div>
+		
+		</div>
+		</div>
+
+		</body>
+		</html>
+		
