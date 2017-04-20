@@ -13,6 +13,7 @@ Orroid is an open source program for Android Application Developers.
 It checks how secure the program, made by you, is and reports a paper showing how vulnerable yours is.
 Then you refer it and fix codes more secure.
 Also it can make Android Application not disassembled or decompiled.
+!image[](report.html)
 
 
 INSTALLATION
